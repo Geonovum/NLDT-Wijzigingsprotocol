@@ -1,5 +1,5 @@
 # Wijzigingsproces {#501FAB48}
-De aanleiding voor een wijzigingsproces is gebaseerd op meldingen over de wensen en gevonden fouten in het <a href='https://docs.geostandaarden.nl/rwgs/rw/' target='_blank'>NLDT Architectuur</a>. Dit zijn de wijzigingsverzoeken. Deze verzoeken worden door de Helpdesk geo-standaarden in behandeling genomen en in samenwerking met de werkgroep  <span style='color: #5E5E5E;'>NLDT Architectuur </span>verwerkt tot een wijzigingsvoorstel voor het Raamwerk. De beheerder neemt het initiatief om een wijzigingsproces te starten, de stappen in het proces zijn conform dit wijzigingsprotocol.
+De aanleiding voor een wijzigingsproces is gebaseerd op meldingen over de wensen en gevonden fouten in de <a href='https://docs.geostandaarden.nl/nldt/nldt-ra/' target='_blank'>NLDT Architectuur</a>. Dit zijn de wijzigingsverzoeken. Deze verzoeken worden door het beheerteam in behandeling genomen en in samenwerking met de werkgroep  <span style='color: #5E5E5E;'>NLDT Architectuur </span>verwerkt tot een wijzigingsvoorstel voor de architectuur. De beheerder neemt het initiatief om een wijzigingsproces te starten, de stappen in het proces zijn conform dit wijzigingsprotocol.
 
 ## Fasen in het wijzigingsproces {#554554BA}
 
