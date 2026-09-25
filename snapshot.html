@@ -3,19 +3,6 @@
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
 <meta name="generator" content="ReSpec 37.2.0">
 <style>
-.issue-label{text-transform:initial}
-.warning>p:first-child{margin-top:0}
-.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
-span.warning{padding:.1em .5em .15em}
-.issue.closed span.issue-number{text-decoration:line-through}
-.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
-.warning{border-color:#f11;border-color:var(--warning-border,#f11);border-width:.2em;border-style:solid;background:#fbe9e9;background:var(--warning-bg,#fbe9e9);color:#000;color:var(--text,#000)}
-.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
-li.task-list-item{list-style:none}
-input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
-.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
-</style>
-<style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
@@ -45,7 +32,7 @@ dfn{cursor:pointer}
 
   
   
-<title>Geonovum template voor ReSpec</title>
+<title>NLDT Architectuur Wijzigingsprotocol</title>
 
   
   
@@ -113,63 +100,7 @@ body:has(input[name=color-scheme][value=dark]:checked){color-scheme:dark}
 img.license{float:left;padding-right:5px;background:0 0}
 </style>
 <meta name="color-scheme" content="light">
-<style>
-ul.index{columns:30ch;column-gap:1.5em}
-ul.index li{list-style:inherit}
-ul.index li span{color:inherit;cursor:pointer;white-space:normal}
-#index-defined-here ul.index li{font-size:.9rem}
-ul.index code{color:inherit}
-#index-defined-here .print-only{display:none}
-@media print{
-#index-defined-here .print-only{display:initial}
-}
-</style>
-<meta name="description" content="TODO: vul in abstract.md een abstract in.">
-<style>
-.hljs,body:has(input[name=color-scheme][value=light]:checked) .hljs,head:not(:has(meta[name=color-scheme][content~=dark]))+body .hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
-@media (prefers-color-scheme:dark){
-.hljs{
-  --base: #282c34;
-  --mono-1: #abb2bf;
-  --mono-2: #818896;
-  --mono-3: #5c6370;
-  --hue-1: #56b6c2;
-  --hue-2: #61aeee;
-  --hue-3: #c678dd;
-  --hue-4: #98c379;
-  --hue-5: #e06c75;
-  --hue-5-2: #be5046;
-  --hue-6: #d19a66;
-  --hue-6-2: #e6c07b;
-}
-}
-body:has(input[name=color-scheme][value=dark]:checked) .hljs{
-  --base: #282c34;
-  --mono-1: #abb2bf;
-  --mono-2: #818896;
-  --mono-3: #5c6370;
-  --hue-1: #56b6c2;
-  --hue-2: #61aeee;
-  --hue-3: #c678dd;
-  --hue-4: #98c379;
-  --hue-5: #e06c75;
-  --hue-5-2: #be5046;
-  --hue-6: #d19a66;
-  --hue-6-2: #e6c07b;
-}
-.hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;color:var(--mono-1,#383a42);background:#fafafa;background:var(--base,#fafafa)}
-.hljs-comment,.hljs-quote{color:#717277;color:var(--mono-3,#717277);font-style:italic}
-.hljs-doctag,.hljs-formula,.hljs-keyword{color:#a626a4;color:var(--hue-3,#a626a4)}
-.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#ca4706;color:var(--hue-5,#ca4706);font-weight:700}
-.hljs-literal{color:#0b76c5;color:var(--hue-1,#0b76c5)}
-.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#42803c;color:var(--hue-4,#42803c)}
-.hljs-built_in,.hljs-class .hljs-title{color:#9a6a01;color:var(--hue-6-2,#9a6a01)}
-.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#986801;color:var(--hue-6,#986801)}
-.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#336ae3;color:var(--hue-2,#336ae3)}
-.hljs-emphasis{font-style:italic}
-.hljs-strong{font-weight:700}
-.hljs-link{text-decoration:underline}
-</style>
+<meta name="description" content="De NLDT Referentie Architectuur bevat afspraken en principes voor een stelsel van digitale tweelingen voor de fysieke leefomgeving. De referentie architectuur is bedoeld voor iedereen die een rol speelt bij het tot stand brengen van een digital twin of digitale tweeling voor de fysieke leefomgeving. De afspraken, uitgangspunten , principes en standaarden die in de referentie architectuur worden gepresenteerd, dragen bij aan het tot stand brengen van een stelsel dat bestaat uit vele toepassingen van het idee van digitale tweelingen.">
 <style>
 
   .sidelabel {
@@ -182,7 +113,7 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
     color: white;
     white-space: nowrap;
     z-index: 1;
-    background-color: #80CC28;
+    background-color: #FF0000;
   }
 </style>
 <script type="text/javascript">
@@ -338,8 +269,7 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
       "authors": [
         "T. Preston-Werner"
       ],
-      "date": "June 2013",
-      "id": "semver"
+      "date": "June 2013"
     },
     "MIM12": {
       "id": "MIM12",
@@ -1397,48 +1327,48 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
       "id": "WMCC11"
     }
   },
-  "title": "Geonovum template voor ReSpec",
-  "specStatus": "basis",
+  "title": "NLDT Architectuur Wijzigingsprotocol",
+  "specStatus": "wv",
   "specType": "HR",
-  "pubDomain": "3dbv",
-  "shortName": "nl-respec-template",
+  "pubDomain": "nldt-ra-wp",
+  "shortName": "nldt-ra-wijzigingsprotocol",
   "publishDate": "2026-02-09",
   "publishVersion": [],
   "editors": [
     {
-      "name": "voornaam achternaam",
+      "name": "Niels Hoffmann",
       "company": "Geonovum",
       "companyURL": "https://www.geonovum.nl"
     }
   ],
   "authors": [
     {
-      "name": "voornaam achternaam",
+      "name": "Niels Hoffmann",
       "company": "Geonovum",
       "companyURL": "https://www.geonovum.nl"
     }
   ],
-  "github": "https://github.com/Geonovum/NL-ReSpec-template"
+  "github": "https://github.com/Geonovum/NLDT-Wijzigingsprotocol"
 }</script>
 <link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
 <body class="h-entry"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://docs.geostandaarden.nl/media/Geonovum.svg" width="132">
-  </a> <h1 id="title" class="title">Geonovum template voor ReSpec</h1>
+  </a> <h1 id="title" class="title">NLDT Architectuur Wijzigingsprotocol</h1>
     
     <h2>
       Geonovum Handreiking<br>
-      Document
-      <time class="dt-published" datetime="2026-02-09">09 februari 2026</time>
+      Werkversie
+      <time class="dt-published" datetime="2026-02-09">25 september 2026</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://docs.geostandaarden.nl/3dbv/basis-hr-nl-respec-template-20260209">https://docs.geostandaarden.nl/3dbv/basis-hr-nl-respec-template-20260209</a>
+              <a class="u-url status" href="https://geonovum.github.io/NLDT-Wijzigingsprotocol/">https://geonovum.github.io/NLDT-Wijzigingsprotocol/</a>
             </dd>
       <dt>Laatst gepubliceerde versie:</dt><dd>
-              <a href="https://docs.geostandaarden.nl/3dbv/nl-respec-template/">https://docs.geostandaarden.nl/3dbv/nl-respec-template/</a>
+              <a href="https://docs.geostandaarden.nl/nldt-ra-wp/nldt-ra-wijzigingsprotocol/">https://docs.geostandaarden.nl/nldt-ra-wp/nldt-ra-wijzigingsprotocol/</a>
             </dd>
-      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/NL-ReSpec-template/">https://geonovum.github.io/NL-ReSpec-template/</a></dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/NLDT-Wijzigingsprotocol/">https://geonovum.github.io/NLDT-Wijzigingsprotocol/</a></dd>
       
       
       
@@ -1446,22 +1376,22 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
       
       <dt>Redacteur:</dt>
       <dd class="editor p-author h-card vcard">
-    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+    <span class="p-name fn">Niels Hoffmann</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
       
       <dt>Auteur:</dt><dd class="editor p-author h-card vcard">
-    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+    <span class="p-name fn">Niels Hoffmann</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
       <dt>Doe mee:</dt><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-template/">GitHub Geonovum/NL-ReSpec-template</a>
+    <a href="https://github.com/Geonovum/NLDT-Wijzigingsprotocol/">GitHub Geonovum/NLDT-Wijzigingsprotocol</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-template/issues/">Alle issues</a>
+    <a href="https://github.com/Geonovum/NLDT-Wijzigingsprotocol/issues/">Alle issues</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-template/issues/new/choose">Dien een melding in</a>
+    <a href="https://github.com/Geonovum/NLDT-Wijzigingsprotocol/issues/new/choose">Dien een melding in</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-template/commits/">Revisiehistorie</a>
+    <a href="https://github.com/Geonovum/NLDT-Wijzigingsprotocol/commits/">Revisiehistorie</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-template/pulls/">Pull requests</a>
+    <a href="https://github.com/Geonovum/NLDT-Wijzigingsprotocol/pulls/">Pull requests</a>
   </dd>
     </dl>
     
@@ -1474,124 +1404,238 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
     <hr title="Separator for header">
   </div>
 
-<section id="abstract" class="introductory"><h2>Samenvatting</h2><p>TODO: vul in abstract.md een abstract in.</p>
-</section>
-<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een document zonder officiële status.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#een-subparagraaf"><bdi class="secno">1.1 </bdi>Een subparagraaf</a></li></ol></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definities"><bdi class="secno">2.1 </bdi>Definities</a></li><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">2.2 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">2.3 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">2.4 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">5. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Termen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Termen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
-
-
-<section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet-normatief.</em></p>
-<p>Bijvoorbeeld een introductie is niet normatief.</p>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
-Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
-</p></div><section id="een-subparagraaf"><div class="header-wrapper"><h3 id="x1-1-een-subparagraaf"><bdi class="secno">1.1 </bdi>Een subparagraaf</h3><a class="self-link" href="#een-subparagraaf" aria-label="Permalink for Section 1.1"></a></div>
-<p>Hier staat een tabel. Als de juiste style gekozen is ziet deze er goed uit.</p>
-<table>
-<thead>
-<tr>
-<th>Sleutel</th>
-<th>Waarde</th>
+<section id="abstract" class="introductory"><h2>Samenvatting</h2><p>De NLDT Referentie Architectuur bevat afspraken en principes voor een stelsel van digitale tweelingen voor de fysieke leefomgeving. De referentie architectuur is bedoeld voor iedereen die een rol speelt bij het tot stand brengen van een digital twin of digitale tweeling voor de fysieke leefomgeving. De afspraken, uitgangspunten , principes en standaarden die in de referentie architectuur worden gepresenteerd, dragen bij aan het tot stand brengen van een stelsel dat bestaat uit vele toepassingen van het idee van digitale tweelingen.</p>
+<p>De referentie architectuur is een "open" architectuur. Dat wil zeggen: de architectuur kan door iedereen, overheid en bedrijfsleven, toegepast worden. Toepassing van de afspraken, principes en standaarden draagt bij aan het tot stand brengen van een "ecosysteem", dat bestaat uit veel te verbinden databronnen en rekenmodellen. Hierdoor wordt het mogelijk om data en modellen uit uiteenlopende sectoren en kennisgebieden met elkaar te verbinden en daarmee twee- of driedimensionale beelden samen te stellen van de fysieke leefomgeving, beleidsvorming te ondersteunen met beslismodellen en simulaties of real time besturingsmogelijkheden voor operationele processen mogelijk te maken.</p>
+<blockquote>
+<p>Gebruikers en organisaties die in de praktijk werken met de referentie architectuur hebben vragen over de toepassing ervan, willen weten welke onderdelen van toepassing zijn, welke versies actueel zijn en welke ontwikkelingen spelen, en hebben mogelijk suggesties voor aanpassingen van de architectuur. Aanpassingen of wijzigingen in de architectuur worden niet zomaar doorgevoerd; voor de ene gebruiker zal een wijziging gering zijn, voor de ander kan het grote gevolgen hebben. Dit wijzigingsprotocol voor de NLDT Referentie Architectuur geeft inzicht in het wijzigingsproces van de architectuur, evenals de belangrijkste taken en verantwoordelijkheden van de betrokkenen (stakeholders) bij het onderhouden en gebruiken van de NLDT Referentie Architectuur. De stakeholders worden op diverse momenten betrokken in dit proces.</p>
+</blockquote>
+<figure id="d6aBfBiAa"><img src="media/wijzigingsprotocol-standaarden.png" alt="Van wijzigingsverzoek tot een nieuwe versie van de standaard" style="width: 100%;">
+<figcaption><a class="self-link" href="#d6aBfBiAa">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Van wijzigingsverzoek tot een nieuwe versie van de standaard</span></figcaption></figure><section id="versiebeheer"><div class="header-wrapper"><h3 id="47B5C445">Versiebeheer</h3><a class="self-link" href="#47B5C445" aria-label="Permalink for this Section"></a></div><p>Dit document wordt bijgewerkt op basis van ontwikkelingen rond het beheer van de NLDT Referentie Architectuur. In onderstaand overzicht houden wij de status van verschillende versies van dit document bij. Zo ziet u altijd wanneer de laatste versie is verschenen. </p>
+<table style="width: 100%;"><caption>Tabel 1 - Versiebeheer van het document wijzigingsprotocol</caption>
+<colgroup><col id="col1" style="width: 9.801876955161628%;">
+<col id="col2" style="width: 21.3532614992469%;">
+<col id="col3" style="width: 14.772332290580465%;">
+<col id="col4" style="width: 54.072529255011005%;">
+</colgroup>
+<thead><tr><th class="left"><p id="2BB7218D"><b>Versie</b></p></th>
+<th class="left"><p id="2B8EDE10"><b>Datum</b></p></th>
+<th class="left"><p id="22E9DC5D"><b>Status</b></p></th>
+<th class="left"><p id="00B79961"><b>Aanpassing</b></p></th>
 </tr>
 </thead>
-<tbody><tr>
-<td>key</td>
-<td>Deze waarde bevat een lange tekst zodat te zien is of de kolombreedte dynamisch wordt bepaald</td>
+<tbody>
+<tr><td class="left"><p id="43D756B8">0.9</p></td>
+<td class="left"><p id="3726B6C9">25 September 2026</p></td>
+<td class="left"><p id="633F0865">Concept</p></td>
+<td class="left"><p id="0432008F"></p></td>
 </tr>
-</tbody></table>
-</section></section>
-<section id="meer-inhoud"><div class="header-wrapper"><h2 id="x2-meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 2."></a></div>
-<section id="definities"><div class="header-wrapper"><h3 id="x2-1-definities"><bdi class="secno">2.1 </bdi>Definities</h3><a class="self-link" href="#definities" aria-label="Permalink for Section 2.1"></a></div>
-<p><dfn id="dfn-definitie" tabindex="0" aria-haspopup="dialog">Definitie</dfn>: Een definitie is een beschrijving van een woord. Een ander woord voor <em>definitie</em> is betekenis of beschrijving.</p>
-</section><section id="afbeeldingen"><div class="header-wrapper"><h3 id="x2-2-afbeeldingen"><bdi class="secno">2.2 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 2.2"></a></div>
-<p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">5. </bdi>Lijst met figuren</a>.</p>
-<p>
-      </p><figure id="fig-onderschrift">
-        <img src="media/Bomos_levenscyclus.svg" alt="Tekstueel alternatief voor toegankelijkheid">
-        <figcaption><a class="self-link" href="#fig-onderschrift">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Onderschrift</span></figcaption>
-      </figure>
-    <p></p>
-</section><section id="referenties"><div class="header-wrapper"><h3 id="x2-3-referenties"><bdi class="secno">2.3 </bdi>Referenties</h3><a class="self-link" href="#referenties" aria-label="Permalink for Section 2.3"></a></div>
-<p>Referenties kunnen op drie plaatsen staan:</p>
+</tbody>
+</table></section></section>
+ <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#47B5C445">Versiebeheer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#conformance">Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#7CA4157F"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#59A549EF"><bdi class="secno">1.1 </bdi>Waarom een wijzigingsprotocol</a></li><li class="tocline"><a class="tocxref" href="#15344483"><bdi class="secno">1.2 </bdi>Begrippen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#55CD880F"><bdi class="secno">2. </bdi>Gebruik van het wijzigingsprotocol</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#3EE7FC49"><bdi class="secno">2.1 </bdi>Releasebeleid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#64C6632B"><bdi class="secno">2.1.1 </bdi>Nieuwe versie van de architectuur</a></li><li class="tocline"><a class="tocxref" href="#1E4463A2"><bdi class="secno">2.1.2 </bdi>Oudere versie van de architectuur</a></li></ol></li><li class="tocline"><a class="tocxref" href="#317FB4EA"><bdi class="secno">2.2 </bdi>Proces varianten</a></li><li class="tocline"><a class="tocxref" href="#40EBAE8E"><bdi class="secno">2.3 </bdi>Betrokkenen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#501FAB48"><bdi class="secno">3. </bdi>Wijzigingsproces</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#554554BA"><bdi class="secno">3.1 </bdi>Fasen in het wijzigingsproces</a></li></ol></li><li class="tocline"><a class="tocxref" href="#190C9848"><bdi class="secno">4. </bdi>Implementatie ondersteuning</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#064739D0"><bdi class="secno">4.1 </bdi>Opleiding en advies</a></li><li class="tocline"><a class="tocxref" href="#09C256A8"><bdi class="secno">4.2 </bdi>Communicatie</a></li><li class="tocline"><a class="tocxref" href="#09C256A9"><bdi class="secno">4.3 </bdi>Validatie en certificatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#31BF4A03"><bdi class="secno">5. </bdi>Escalatieprocedure en klachtenafhandeling</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#63014198"><bdi class="secno">5.1 </bdi>Escalatieprocedure</a></li><li class="tocline"><a class="tocxref" href="#66D79BE4"><bdi class="secno">5.2 </bdi>Klachtenafhandeling</a></li></ol></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">A. </bdi>Lijst met figuren</a></li></ol></nav>
+      <section id="conformance" class="introductory"><div class="header-wrapper"><h2 id="conformiteit">Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for this Section"></a></div><p>Naast onderdelen die als niet-normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet-normatief. Verder is alles in dit document normatief.</p></section>
+      
+      
+      <section class="chapter" id="inleiding"><div class="header-wrapper"><h2 id="7CA4157F"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#7CA4157F" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief</em>
+<br>
+<br>
+De NLDT Referentie Architectuur bevat afspraken en principes voor een stelsel van digitale tweelingen voor de fysieke leefomgeving. De referentie architectuur is bedoeld voor iedereen die een rol speelt bij het tot stand brengen van een digital twin of digitale tweeling voor de fysieke leefomgeving. De afspraken, uitgangspunten , principes en standaarden die in de referentie architectuur worden gepresenteerd, dragen bij aan het tot stand brengen van een stelsel dat bestaat uit vele toepassingen van het idee van digitale tweelingen.</p>
+<p>De referentie architectuur is een "open" architectuur. Dat wil zeggen: de architectuur kan door iedereen, overheid en bedrijfsleven, toegepast worden. Toepassing van de afspraken, principes en standaarden draagt bij aan het tot stand brengen van een "ecosysteem", dat bestaat uit veel te verbinden databronnen en rekenmodellen. Hierdoor wordt het mogelijk om data en modellen uit uiteenlopende sectoren en kennisgebieden met elkaar te verbinden en daarmee twee- of driedimensionale beelden samen te stellen van de fysieke leefomgeving, beleidsvorming te ondersteunen met beslismodellen en simulaties of real time besturingsmogelijkheden voor operationele processen mogelijk te maken.
+<br></p>
+<p>Gebruikers en organisaties die in de praktijk werken met de referentie architectuur hebben vragen over de toepassing ervan, willen weten welke onderdelen van toepassing zijn, welke versies actueel zijn en welke ontwikkelingen spelen, en hebben mogelijk suggesties voor aanpassingen van de architectuur. Aanpassingen of wijzigingen in de architectuur worden niet zomaar doorgevoerd; voor de ene gebruiker zal een wijziging gering zijn, voor de ander kan het grote gevolgen hebben. Dit wijzigingsprotocol voor de NLDT Referentie Architectuur geeft inzicht in het wijzigingsproces van de architectuur, evenals de belangrijkste taken en verantwoordelijkheden van de betrokkenen (stakeholders) bij het onderhouden en gebruiken van de NLDT Referentie Architectuur. De stakeholders worden op diverse momenten betrokken in dit proces.</p>
+<section id="waarom-een-wijzigingsprotocol"><div class="header-wrapper"><h3 id="59A549EF"><bdi class="secno">1.1 </bdi>Waarom een wijzigingsprotocol</h3><a class="self-link" href="#59A549EF" aria-label="Permalink for Section 1.1"></a></div><p>In dit wijzigingsprotocol staan de sturende principes achter het wijzigingsproces voor de NLDT Referentie Architectuur; de manier waarop wijzigingen in de architectuur plaatsvinden in afstemming met de stakeholders en gebruikers. Met het protocol wordt elke wijziging van de architectuur een voorspelbaar en transparant proces voor beheerders, software leveranciers en gebruikers van de architectuur. In het protocol zijn basisbegrippen en uitgangspunten uiteengezet voor het wijzigingsproces, bijvoorbeeld wat onder nieuwe en volgende versies van de architectuur verstaan wordt en wanneer deze nieuwe versie(s) verwacht mogen worden. Tevens is een processchema uitgewerkt, dat invulling geeft aan de stappen die de stakeholders met elkaar doorlopen om tot een wijziging van de architectuur te komen.</p>
+</section><section id="begrippen"><div class="header-wrapper"><h3 id="15344483"><bdi class="secno">1.2 </bdi>Begrippen</h3><a class="self-link" href="#15344483" aria-label="Permalink for Section 1.2"></a></div><table style="width: 100%;"><caption></caption>
+<colgroup><col id="col1a" style="width: 30.78895233655751%;">
+<col id="col2a" style="width: 69.2110476634425%;">
+</colgroup>
+<thead><tr><th style="border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000;"><p id="11350A7E">Begrip</p></th>
+<th style="border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="3AE04064">Uitleg</p></th>
+</tr>
+</thead>
+<tbody><tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="1EF8A4C9">NLDT Referentie Architectuur</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="43D68896">De referentie architectuur bevat afspraken en principes voor een stelsel van digitale tweelingen voor de fysieke leefomgeving. De referentie architectuur is bedoeld voor iedereen die een rol speelt bij het tot stand brengen van een digital twin of digitale tweeling voor de fysieke leefomgeving. De afspraken, uitgangspunten, principes en standaarden die in dit document worden gepresenteerd, dragen bij aan het tot stand brengen van een stelsel dat bestaat uit vele toepassingen van het idee van digitale tweelingen.
+ </p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p class="space-after" id="55BDFDD7">GI-Beraad</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="04D9DE47">Het GI-beraad doet aanbevelingen aan de minister van Binnenlandse Zaken, overige ministers en overheidsorganen over de strategische onderwerpen op het gebied van de geo-informatie in de publieke sector in Nederland. Het GI-beraad bestaat uit vertegenwoordigers van de verschillende gebruikersgroepen uit de publieke sector, zowel van het Rijk, de provincies, gemeenten en waterschappen.  </p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="14559989">NLDT stuurgroep</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="32EFE886">De NLDT heeft een interbestuurlijke stuurgroep die optreedt als adviesgremium. Deze stuurgroep bewaakt de verbinding tussen de organisatorische en beleidsmatige kant van gebiedsontwikkeling en de technische doorontwikkeling van digitale tweelingen (zoals standaarden, experimenten en hergebruik van componenten).</p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="0BFC95EB">Werkgroep NLDT Architectuur</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="74100686">Een werkgroep bestaande uit experts uit het werkveld, die wijzigingsvoorstellen voor de architectuur beoordelen, voorbereiden en na accordering verwerken in de architectuur. </p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="2E580ABF">Wijzigingsprotocol</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="02A10CD8">Hiermee wordt het geheel van vastgelegde regels en afspraken voor het wijzigen van de NLDT Referentie Architectuur vastgelegd.</p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="14E35469">Wijzigingsproces</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="702A03CD">Het wijzigingsproces is de daadwerkelijke wijziging van de architectuur op een bepaald moment. Het volledige wijzigingsproces doorloopt de fasen van het wijzigingsprotocol met een datum van inwerkingtreding van de nieuwe versie van de architectuur.</p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="49AB903F">Wijzigingsverzoek</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="55C9A13E">Wijzigingsverzoeken zijn wensen voor aanpassing van de architectuur. Een wijzigingsverzoek doorloopt het wijzigingsproces en kan leiden tot een Wijzigingsvoorstel.</p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="150E5767">Wijzigingsvoorstel</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="623BD2DF">In het wijzigingsproces worden meerdere wijzigingsverzoeken meegenomen en gebundeld tot één wijzigingsvoorstel voor het wijzigen van de NLDT Referentie Architectuur.</p></td>
+</tr>
+</tbody>
+</table></section></section>
+      <section class="chapter" id="gebruik-van-het-wijzigingsprotocol"><div class="header-wrapper"><h2 id="55CD880F"><bdi class="secno">2. </bdi>Gebruik van het wijzigingsprotocol</h2><a class="self-link" href="#55CD880F" aria-label="Permalink for Section 2."></a></div><p>Het wijzigingsprotocol schrijft een vast stramien voor het wijzigen van de NLDT Referentie Architectuur voor. Het protocol benoemt de fasen en de op te leveren resultaten. Belangrijk zijn de randvoorwaarden en uitgangspunten. De gebruikers, deskundigen (experts) en andere stakeholders van de NLDT Referentie Architectuur worden bij het wijzigen van de NLDT Referentie Architectuur nauw betrokken.</p>
+<p>Het wijzigingsprotocol voor de NLDT Referentie Architectuur geeft:</p>
 <ul>
-<li>In SpecRef <a href="https://www.specref.org/">Specref</a></li>
-<li>In de organisatie configuraties [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>]. Deze zijn te vinden op <a href="https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js">tools.geostandaarden.nl</a>.</li>
-<li>In het document, zoals [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim12" title="MIM - Metamodel Informatie Modellering (Versie 1.2)">MIM12</a></cite>]. Deze zijn te vinden in <code>js/config.js</code>.</li>
+<li>Inzicht in het behandel- en besluitproces dat ten grondslag ligt aan het versiebeheer;</li>
+<li>Inzicht in de wijzigingsverzoeken;</li>
+<li>Inzicht in een voorgestelde wijziging van de architectuur;</li>
+<li>Stabiliteit aan de architectuur;</li>
+<li>Continuïteit aan de architectuur;</li>
+<li>Een eenduidige aanpak.</li>
 </ul>
-<p>Referentie uit organisatie lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>] of de locale lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim12" title="MIM - Metamodel Informatie Modellering (Versie 1.2)">MIM12</a></cite>]. Lijst staat in <code>organisation-config.js</code>. Alleen referenties die in de tekst voorkomen worden getoond.</p>
-<p>We gebruiken een <a href="#dfn-definitie" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-definitie-1">definitie</a> om een woord te omschrijven.</p>
-</section><section id="optioneel"><div class="header-wrapper"><h3 id="x2-4-optioneel"><bdi class="secno">2.4 </bdi>Optioneel</h3><a class="self-link" href="#optioneel" aria-label="Permalink for Section 2.4"></a></div>
-<p>De onderstaande secties (<em>Conformiteit</em> e.d.) zijn optioneel, zie <code>index.html</code>:</p>
-<pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"abstract"</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"abstract.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sotd"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span><span class="hljs-comment">&lt;!-- Wordt automatisch gevuld --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"informative"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"ch01.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"ch02.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-comment">&lt;!-- Hieronder optionele secties. Worden automatisch gevuld --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'conformance'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'tof'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"index"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-</code></pre>
+<section id="releasebeleid"><div class="header-wrapper"><h3 id="3EE7FC49"><bdi class="secno">2.1 </bdi>Releasebeleid</h3><a class="self-link" href="#3EE7FC49" aria-label="Permalink for Section 2.1"></a></div><section id="nieuwe-versie-van-de-architectuur"><div class="header-wrapper"><h4 id="64C6632B"><bdi class="secno">2.1.1 </bdi>Nieuwe versie van de architectuur</h4><a class="self-link" href="#64C6632B" aria-label="Permalink for Section 2.1.1"></a></div><p>Een release is een nieuwe uitgave van de architectuur. De wijzigingen binnen een release wordt gedocumenteerd en vastgelegd in de sectie versiemanagement van de architectuur. De gebruiker kan zo nagaan op welke plaatsen de betreffen de architectuur gewijzigd is. De nieuwe release kenmerkt zich ten opzichte van de oude versie door een hoger versienummer. Bij de release is ieder product van de architectuur voorzien van een nieuw versienummer conform Semantic Versioning (SemVer). Binnen SemVer heeft elk product zijn eigen versienummer conform de X.Y.Z schrijfwijze, bijvoorbeeld versie 2.1.0 (=X.Y.Z):</p>
+<ul><li><b>X-wijziging.</b>&nbsp;Indien de NLDT Referentie Architectuur een majeure update krijgt met relatief veel nieuwe en ingrijpende wijzigingen dan wordt de architectuur als geheel aangeduid met een X wijziging. Frequentie: op voorstel van Geonovum en in overleg met de NLDT Stuurgroep.</li>
+</ul>
+<ul><li><b>Y-wijziging.</b>&nbsp;Indien de NLDT Referentie Architectuur een beperkte update krijgt met een relatief klein aantal en minder ingrijpende wijzigingen dan wordt de architectuur als geheel aangeduid met een Y wijziging.  
+Frequentie: op voorstel van Geonovum en in overleg met de NLDT Stuurgroep.</li>
+</ul>
+<ul><li><b>Z-wijziging. </b>Dit zijn bugs/fouten of aanvullingen in een toelichting, die geen impact hebben op de wezenlijke architectuur. 
+Frequentie: zo spoedig mogelijk na constatering door Geonovum.</li>
+</ul>
+<br>
+Na het uitbrengen van een nieuwe versie van de architectuur is deze nieuwe versie beschikbaar en vindbaar via de&nbsp;Geonovum website.</section><section id="oudere-versie-van-de-architectuur"><div class="header-wrapper"><h4 id="1E4463A2"><bdi class="secno">2.1.2 </bdi>Oudere versie van de architectuur</h4><a class="self-link" href="#1E4463A2" aria-label="Permalink for Section 2.1.2"></a></div><p>De SemVer-methodiek schrijft backwards compatibility voor op het Y-niveau. Een nieuwe versie dwingt daarmee geen directe overstap af bij de gebruikers, tenzij anders (bijvoorbeeld wettelijk) bepaald. Na het uitbrengen van de nieuwe versie van de architectuur wordt de ontwikkeling van de oude versie stop gezet.
+Voor het onderhoud en de ondersteuning van een oude versie van een standaard gelden de volgende uitgangspunten:</p>
+<ul><li>Aan een oude versie worden geen nieuwe features toegevoegd, geen aanpassingen gedaan na het uitbrengen van een nieuwe versie. Verzoeken om aanpassing en wijziging voor nieuwe functionaliteit worden niet meer in behandeling genomen. Correcties (Z-wijzigingen) worden wel uitgevoerd op de vorige versies zolang deze nog ondersteund worden.</li>
+<li>Bij oplevering van een nieuwe versie wordt de voorgaande versie nog een van te voren vastgestelde periode ondersteund. De duur van de overgangsperiode wordt mede bepaald door de omvang van de wijzigingen (X, Y en Z wijzigingen op de vorige versies), de staat van ontwikkeling van de architectuur, en of de architectuur in voorlopig dan wel permanent beheer is.</li>
+</ul>
+Na het uitbrengen van een nieuwe versie van de architectuur blijven oudere versies beschikbaar en zijn vindbaar via de Geonovum website.</section></section><section id="proces-varianten"><div class="header-wrapper"><h3 id="317FB4EA"><bdi class="secno">2.2 </bdi>Proces varianten</h3><a class="self-link" href="#317FB4EA" aria-label="Permalink for Section 2.2"></a></div><p>In paragraaf&nbsp;2.1 releasebeleid&nbsp;zijn de X, Y en Z wijzigingen uitgelegd. Wijzigingen kennen drie procesvarianten. Eén voor X wijzigingen, één voor Y wijzigingen en één voor Z wijzigingen.
+De start van het proces is voor alle varianten hetzelfde. Op de&nbsp;<a href="https://github.com/Geonovum/NLDT-Architectuur/issues">github repository</a>&nbsp;wordt een issue ingediend. De impact van deze wijziging wordt door de <b>Werkgroep NLDT Architectuur </b>beoordeeld. Deze eerste impactanalyse beoordeelt tot welke SemVer categorie de wijziging hoort en wat de effecten van de wijziging zijn. </p>
+<p><b>Proces voor X en Y wijzigingen</b>
+X en Y wijzigingen vergen volledige afstemming en het doorlopen van alle in paragraaf&nbsp;5.1&nbsp;beschreven fasen: Inhoud, Toetsing, Besluitvorming en Implementatie. Voor de inhoudelijke fase wordt een werkgroep gestart met daarin deskundigen (experts). Het resultaat van de werkgroep is een wijzigingsvoorstel dat in de Werkgroep NLDT Architectuur en in het overleg van de <b>NLDT Stuurgroep</b> met externe stakeholders wordt besproken. Y en X wijzigingen worden altijd voorgelegd aan het <b>GI-Beraad</b>, die stelt een nieuwe versie van de NLDT Architectuur vast.</p>
+<p><b>Proces voor Z wijzigingen</b>
+In overleg met de Werkgroep NLDT Architectuur worden Z wijzigingen in de volgende release opgenomen. De inhoudelijke fase wordt door het beheerteam van de architectuur uitgevoerd. Besluitvorming vindt plaats in afstemming met de Werkgroep. Implementatie vindt plaats door het publiceren van de wijziging op de&nbsp;Geonovum website.</p>
+</section><section id="betrokkenen"><div class="header-wrapper"><h3 id="40EBAE8E"><bdi class="secno">2.3 </bdi>Betrokkenen</h3><a class="self-link" href="#40EBAE8E" aria-label="Permalink for Section 2.3"></a></div><p>De volgende betrokkenen spelen een rol in het wijzigingsproces van de NLDT Referentie Architectuur:</p>
+<table style="width: 100%;"><caption></caption>
+<colgroup><col id="col1b" style="width: 24.973779279804216%;">
+<col id="col2b" style="width: 75.02622072019578%;">
+</colgroup>
+<thead><tr><th style="border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000;"><p id="502496B4"><b><span style="color: #FFFFFF;">Rol</span></b></p></th>
+<th style="border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; ">Stakeholder</th>
+</tr>
+</thead>
+<tbody><tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="79779D62">Opdrachtgever (eigenaar) van de NLDT Referentie Architectuur</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="7CDDA5B2">Ministerie van BZK.</p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="20E94293">GI-Beraad</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="2FABC3CA">Het GI-beraad doet aanbevelingen aan de minister van Binnenlandse Zaken, overige ministers en overheidsorganen over de strategische onderwerpen op het gebied van de geo-informatie in de publieke sector in Nederland. Het GI-beraad bestaat uit vertegenwoordigers van de verschillende gebruikersgroepen uit de publieke sector, zowel van het Rijk, de provincies, gemeenten en waterschappen. Het GI-Beraad stelt een X- of Y- versie van de NLDT Architectuur vast.</p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="19CAFEC7">NLDT Stuurgroep</p></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="1B9CE459">De NLDT heeft een interbestuurlijke stuurgroep die optreedt als adviesgremium. Deze geeft een advies aan het GI-Beraad over het vaststellen van de architectuur</p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="7193A7AF">Werkgroep NLDT Architectuur.</p></td><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "><p id="4894E108">De werkgroep bespreekt wijzigingen en adviseert het beheerteam.</p></td>
+</tr>
+<tr><td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "></td>
+<td style="border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; "></td>
+</tr>
+</tbody>
+</table></section></section>
+      <section class="chapter" id="wijzigingsproces"><div class="header-wrapper"><h2 id="501FAB48"><bdi class="secno">3. </bdi>Wijzigingsproces</h2><a class="self-link" href="#501FAB48" aria-label="Permalink for Section 3."></a></div><p>De aanleiding voor een wijzigingsproces is gebaseerd op meldingen over de wensen en gevonden fouten in de <a href="https://docs.geostandaarden.nl/nldt/nldt-ra/" target="_blank">NLDT Architectuur</a>. Dit zijn de wijzigingsverzoeken. Deze verzoeken worden door het beheerteam in behandeling genomen en in samenwerking met de werkgroep NLDT Architectuur verwerkt tot een wijzigingsvoorstel voor de architectuur. De beheerder neemt het initiatief om een wijzigingsproces te starten, de stappen in het proces zijn conform dit wijzigingsprotocol.</p>
+<section id="fasen-in-het-wijzigingsproces"><div class="header-wrapper"><h3 id="554554BA"><bdi class="secno">3.1 </bdi>Fasen in het wijzigingsproces</h3><a class="self-link" href="#554554BA" aria-label="Permalink for Section 3.1"></a></div><p>Het volledige wijzigingsproces doorloopt de fasen Inhoud, Toetsing, Besluitvorming en Implementatie, zoals weergegeven in&nbsp;figuur 1.</p>
+<figure id="fig-fasen-wijzigingsproces"><img src="media/image2.png" alt="fasen Wijzigingsproces" style="width: 35%;">
+<figcaption><a class="self-link" href="#fig-fasen-wijzigingsproces">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Fasen wijzigingsproces</span></figcaption></figure><p><b>Inhoud</b>
+In de fase Inhoud wordt voor ieder wijzigingsverzoek bepaald of deze wordt opgenomen in de nieuwe versie van de architectuur of niet. Wijzigingsverzoeken zijn inzichtelijk via de publieke NLDT werkomgeving op GitHub. Voor wijzigingsverzoeken die worden meegenomen in de nieuwe versie van de architectuur, wordt de impact beschreven. Dit gebeurt in samenwerking met expert- en gebruikersgroepen, softwareleveranciers en de beheerder. Afhankelijk van de omvang van de wijziging ten opzichte van de voorgaande versie is de groep van te raadplegen experts evenredig groter of kleiner.
+<br>
+<br>
+<b>Toetsing</b>
+De fase Toetsing vormt een brug tussen de inhoud, besluitvorming en de implementatie. In deze fase wordt eenieder (in het geval van een X of Y wijziging) of een beperkte groep belanghebbenden (in het geval van een Z wijziging) uitgenodigd om zijn of haar visie te geven op het wijzigingsvoorstel. Met deze consultaties vragen wij de gebruikers van de architectuur actief hun reactie te geven op het wijzigingsvoorstel. Het wijzigingsvoorstel inclusief de terugkoppeling uit de consultatie wordt verwerkt tot release candidate van de architectuur.
+<br>
+<br>
+<b>Besluitvorming</b>
+Het wijzigingsvoorstel wordt inclusief de consulatie reacties voorgelegd aan de NLDT Stuurgroep. Zij voorziet het wijzigingsvoorstel van advies. Het GI-Beraad besluit, afhankelijk van het type wijziging (X, Y of Z, zie paragraaf 2.2), over de voorgestelde wijziging.
+<br>
+<br>
+<b>Implementatie</b>
+Het verwerken van het wijzigingsvoorstel in het NLDT Architectuur staat centraal in deze fase. Dit wordt gedaan door het beheerteam.</p>
 </section></section>
-<section id="mermaid-diagram"><div class="header-wrapper"><h2 id="x3-mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</h2><a class="self-link" href="#mermaid-diagram" aria-label="Permalink for Section 3."></a></div>
-<figure id="Mermaidvoorbeeld"><pre><img style="max-width: 100%; aspect-ratio: 2/1;" src="data:image/svg+xml;base64,PHN2ZyBpZD0iZGlhZ3JhbS0xIiB3aWR0aD0iMTAwJSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBjbGFzcz0iZmxvd2NoYXJ0IiBzdHlsZT0ibWF4LXdpZHRoOiAyMDguMjM0Mzc1cHg7IiB2aWV3Qm94PSIwIDAgMjA4LjIzNDM3NSAyNTciIHJvbGU9ImdyYXBoaWNzLWRvY3VtZW50IGRvY3VtZW50IiBhcmlhLXJvbGVkZXNjcmlwdGlvbj0iZmxvd2NoYXJ0LXYyIj48c3R5bGU+I2RpYWdyYW0tMXtmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7ZmlsbDojMzMzO31Aa2V5ZnJhbWVzIGVkZ2UtYW5pbWF0aW9uLWZyYW1le2Zyb217c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fUBrZXlmcmFtZXMgZGFzaHt0b3tzdHJva2UtZGFzaG9mZnNldDowO319I2RpYWdyYW0tMSAuZWRnZS1hbmltYXRpb24tc2xvd3tzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDUwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNkaWFncmFtLTEgLmVkZ2UtYW5pbWF0aW9uLWZhc3R7c3Ryb2tlLWRhc2hhcnJheTo5LDUhaW1wb3J0YW50O3N0cm9rZS1kYXNob2Zmc2V0OjkwMDthbmltYXRpb246ZGFzaCAyMHMgbGluZWFyIGluZmluaXRlO3N0cm9rZS1saW5lY2FwOnJvdW5kO30jZGlhZ3JhbS0xIC5lcnJvci1pY29ue2ZpbGw6IzU1MjIyMjt9I2RpYWdyYW0tMSAuZXJyb3ItdGV4dHtmaWxsOiM1NTIyMjI7c3Ryb2tlOiM1NTIyMjI7fSNkaWFncmFtLTEgLmVkZ2UtdGhpY2tuZXNzLW5vcm1hbHtzdHJva2Utd2lkdGg6MXB4O30jZGlhZ3JhbS0xIC5lZGdlLXRoaWNrbmVzcy10aGlja3tzdHJva2Utd2lkdGg6My41cHg7fSNkaWFncmFtLTEgLmVkZ2UtcGF0dGVybi1zb2xpZHtzdHJva2UtZGFzaGFycmF5OjA7fSNkaWFncmFtLTEgLmVkZ2UtdGhpY2tuZXNzLWludmlzaWJsZXtzdHJva2Utd2lkdGg6MDtmaWxsOm5vbmU7fSNkaWFncmFtLTEgLmVkZ2UtcGF0dGVybi1kYXNoZWR7c3Ryb2tlLWRhc2hhcnJheTozO30jZGlhZ3JhbS0xIC5lZGdlLXBhdHRlcm4tZG90dGVke3N0cm9rZS1kYXNoYXJyYXk6Mjt9I2RpYWdyYW0tMSAubWFya2Vye2ZpbGw6IzMzMzMzMztzdHJva2U6IzMzMzMzMzt9I2RpYWdyYW0tMSAubWFya2VyLmNyb3Nze3N0cm9rZTojMzMzMzMzO30jZGlhZ3JhbS0xIHN2Z3tmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7fSNkaWFncmFtLTEgcHttYXJnaW46MDt9I2RpYWdyYW0tMSAubGFiZWx7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2NvbG9yOiMzMzM7fSNkaWFncmFtLTEgLmNsdXN0ZXItbGFiZWwgdGV4dHtmaWxsOiMzMzM7fSNkaWFncmFtLTEgLmNsdXN0ZXItbGFiZWwgc3Bhbntjb2xvcjojMzMzO30jZGlhZ3JhbS0xIC5jbHVzdGVyLWxhYmVsIHNwYW4gcHtiYWNrZ3JvdW5kLWNvbG9yOnRyYW5zcGFyZW50O30jZGlhZ3JhbS0xIC5sYWJlbCB0ZXh0LCNkaWFncmFtLTEgc3BhbntmaWxsOiMzMzM7Y29sb3I6IzMzMzt9I2RpYWdyYW0tMSAubm9kZSByZWN0LCNkaWFncmFtLTEgLm5vZGUgY2lyY2xlLCNkaWFncmFtLTEgLm5vZGUgZWxsaXBzZSwjZGlhZ3JhbS0xIC5ub2RlIHBvbHlnb24sI2RpYWdyYW0tMSAubm9kZSBwYXRoe2ZpbGw6I0VDRUNGRjtzdHJva2U6IzkzNzBEQjtzdHJva2Utd2lkdGg6MXB4O30jZGlhZ3JhbS0xIC5yb3VnaC1ub2RlIC5sYWJlbCB0ZXh0LCNkaWFncmFtLTEgLm5vZGUgLmxhYmVsIHRleHQsI2RpYWdyYW0tMSAuaW1hZ2Utc2hhcGUgLmxhYmVsLCNkaWFncmFtLTEgLmljb24tc2hhcGUgLmxhYmVse3RleHQtYW5jaG9yOm1pZGRsZTt9I2RpYWdyYW0tMSAubm9kZSAua2F0ZXggcGF0aHtmaWxsOiMwMDA7c3Ryb2tlOiMwMDA7c3Ryb2tlLXdpZHRoOjFweDt9I2RpYWdyYW0tMSAucm91Z2gtbm9kZSAubGFiZWwsI2RpYWdyYW0tMSAubm9kZSAubGFiZWwsI2RpYWdyYW0tMSAuaW1hZ2Utc2hhcGUgLmxhYmVsLCNkaWFncmFtLTEgLmljb24tc2hhcGUgLmxhYmVse3RleHQtYWxpZ246Y2VudGVyO30jZGlhZ3JhbS0xIC5ub2RlLmNsaWNrYWJsZXtjdXJzb3I6cG9pbnRlcjt9I2RpYWdyYW0tMSAucm9vdCAuYW5jaG9yIHBhdGh7ZmlsbDojMzMzMzMzIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MDtzdHJva2U6IzMzMzMzMzt9I2RpYWdyYW0tMSAuYXJyb3doZWFkUGF0aHtmaWxsOiMzMzMzMzM7fSNkaWFncmFtLTEgLmVkZ2VQYXRoIC5wYXRoe3N0cm9rZTojMzMzMzMzO3N0cm9rZS13aWR0aDoxcHg7fSNkaWFncmFtLTEgLmZsb3djaGFydC1saW5re3N0cm9rZTojMzMzMzMzO2ZpbGw6bm9uZTt9I2RpYWdyYW0tMSAuZWRnZUxhYmVse2JhY2tncm91bmQtY29sb3I6cmdiYSgyMzIsMjMyLDIzMiwgMC44KTt0ZXh0LWFsaWduOmNlbnRlcjt9I2RpYWdyYW0tMSAuZWRnZUxhYmVsIHB7YmFja2dyb3VuZC1jb2xvcjpyZ2JhKDIzMiwyMzIsMjMyLCAwLjgpO30jZGlhZ3JhbS0xIC5lZGdlTGFiZWwgcmVjdHtvcGFjaXR5OjAuNTtiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjMyLDIzMiwyMzIsIDAuOCk7ZmlsbDpyZ2JhKDIzMiwyMzIsMjMyLCAwLjgpO30jZGlhZ3JhbS0xIC5sYWJlbEJrZ3tiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjMyLCAyMzIsIDIzMiwgMC41KTt9I2RpYWdyYW0tMSAuY2x1c3RlciByZWN0e2ZpbGw6I2ZmZmZkZTtzdHJva2U6I2FhYWEzMztzdHJva2Utd2lkdGg6MXB4O30jZGlhZ3JhbS0xIC5jbHVzdGVyIHRleHR7ZmlsbDojMzMzO30jZGlhZ3JhbS0xIC5jbHVzdGVyIHNwYW57Y29sb3I6IzMzMzt9I2RpYWdyYW0tMSBkaXYubWVybWFpZFRvb2x0aXB7cG9zaXRpb246YWJzb2x1dGU7dGV4dC1hbGlnbjpjZW50ZXI7bWF4LXdpZHRoOjIwMHB4O3BhZGRpbmc6MnB4O2ZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjtmb250LXNpemU6MTJweDtiYWNrZ3JvdW5kOmhzbCg4MCwgMTAwJSwgOTYuMjc0NTA5ODAzOSUpO2JvcmRlcjoxcHggc29saWQgI2FhYWEzMztib3JkZXItcmFkaXVzOjJweDtwb2ludGVyLWV2ZW50czpub25lO3otaW5kZXg6MTAwO30jZGlhZ3JhbS0xIC5mbG93Y2hhcnRUaXRsZVRleHR7dGV4dC1hbmNob3I6bWlkZGxlO2ZvbnQtc2l6ZToxOHB4O2ZpbGw6IzMzMzt9I2RpYWdyYW0tMSByZWN0LnRleHR7ZmlsbDpub25lO3N0cm9rZS13aWR0aDowO30jZGlhZ3JhbS0xIC5pY29uLXNoYXBlLCNkaWFncmFtLTEgLmltYWdlLXNoYXBle2JhY2tncm91bmQtY29sb3I6cmdiYSgyMzIsMjMyLDIzMiwgMC44KTt0ZXh0LWFsaWduOmNlbnRlcjt9I2RpYWdyYW0tMSAuaWNvbi1zaGFwZSBwLCNkaWFncmFtLTEgLmltYWdlLXNoYXBlIHB7YmFja2dyb3VuZC1jb2xvcjpyZ2JhKDIzMiwyMzIsMjMyLCAwLjgpO3BhZGRpbmc6MnB4O30jZGlhZ3JhbS0xIC5pY29uLXNoYXBlIC5sYWJlbCByZWN0LCNkaWFncmFtLTEgLmltYWdlLXNoYXBlIC5sYWJlbCByZWN0e29wYWNpdHk6MC41O2JhY2tncm91bmQtY29sb3I6cmdiYSgyMzIsMjMyLDIzMiwgMC44KTtmaWxsOnJnYmEoMjMyLDIzMiwyMzIsIDAuOCk7fSNkaWFncmFtLTEgLmxhYmVsLWljb257ZGlzcGxheTppbmxpbmUtYmxvY2s7aGVpZ2h0OjFlbTtvdmVyZmxvdzp2aXNpYmxlO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO30jZGlhZ3JhbS0xIC5ub2RlIC5sYWJlbC1pY29uIHBhdGh7ZmlsbDpjdXJyZW50Q29sb3I7c3Ryb2tlOnJldmVydDtzdHJva2Utd2lkdGg6cmV2ZXJ0O30jZGlhZ3JhbS0xIC5ub2RlIC5uZW8tbm9kZXtzdHJva2U6IzkzNzBEQjt9I2RpYWdyYW0tMSBbZGF0YS1sb29rPSJuZW8iXS5ub2RlIHJlY3QsI2RpYWdyYW0tMSBbZGF0YS1sb29rPSJuZW8iXS5jbHVzdGVyIHJlY3QsI2RpYWdyYW0tMSBbZGF0YS1sb29rPSJuZW8iXS5ub2RlIHBvbHlnb257c3Ryb2tlOiM5MzcwREI7ZmlsdGVyOmRyb3Atc2hhZG93KDFweCAycHggMnB4IHJnYmEoMTg1LCAxODUsIDE4NSwgMSkpO30jZGlhZ3JhbS0xIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgcGF0aHtzdHJva2U6IzkzNzBEQjtzdHJva2Utd2lkdGg6MXB4O30jZGlhZ3JhbS0xIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgLm91dGVyLXBhdGh7ZmlsdGVyOmRyb3Atc2hhZG93KDFweCAycHggMnB4IHJnYmEoMTg1LCAxODUsIDE4NSwgMSkpO30jZGlhZ3JhbS0xIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgLm5lby1saW5lIHBhdGh7c3Ryb2tlOiM5MzcwREI7ZmlsdGVyOm5vbmU7fSNkaWFncmFtLTEgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSBjaXJjbGV7c3Ryb2tlOiM5MzcwREI7ZmlsdGVyOmRyb3Atc2hhZG93KDFweCAycHggMnB4IHJnYmEoMTg1LCAxODUsIDE4NSwgMSkpO30jZGlhZ3JhbS0xIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgY2lyY2xlIC5zdGF0ZS1zdGFydHtmaWxsOiMwMDAwMDA7fSNkaWFncmFtLTEgW2RhdGEtbG9vaz0ibmVvIl0uaWNvbi1zaGFwZSAuaWNvbntmaWxsOiM5MzcwREI7ZmlsdGVyOmRyb3Atc2hhZG93KDFweCAycHggMnB4IHJnYmEoMTg1LCAxODUsIDE4NSwgMSkpO30jZGlhZ3JhbS0xIFtkYXRhLWxvb2s9Im5lbyJdLmljb24tc2hhcGUgLmljb24tbmVvIHBhdGh7c3Ryb2tlOiM5MzcwREI7ZmlsdGVyOmRyb3Atc2hhZG93KDFweCAycHggMnB4IHJnYmEoMTg1LCAxODUsIDE4NSwgMSkpO30jZGlhZ3JhbS0xIDpyb290ey0tbWVybWFpZC1mb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7fTwvc3R5bGU+PGc+PG1hcmtlciBpZD0iZGlhZ3JhbS0xX2Zsb3djaGFydC12Mi1wb2ludEVuZCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWD0iNSIgcmVmWT0iNSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXJrZXJXaWR0aD0iOCIgbWFya2VySGVpZ2h0PSI4IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0gMCAwIEwgMTAgNSBMIDAgMTAgeiIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiPjwvcGF0aD48L21hcmtlcj48bWFya2VyIGlkPSJkaWFncmFtLTFfZmxvd2NoYXJ0LXYyLXBvaW50U3RhcnQiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjQuNSIgcmVmWT0iNSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXJrZXJXaWR0aD0iOCIgbWFya2VySGVpZ2h0PSI4IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0gMCA1IEwgMTAgMTAgTCAxMCAwIHoiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ij48L3BhdGg+PC9tYXJrZXI+PG1hcmtlciBpZD0iZGlhZ3JhbS0xX2Zsb3djaGFydC12Mi1wb2ludEVuZC1tYXJnaW4iIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiB2aWV3Qm94PSIwIDAgMTEuNSAxNCIgcmVmWD0iMTEuNSIgcmVmWT0iNyIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXJrZXJXaWR0aD0iMTAuNSIgbWFya2VySGVpZ2h0PSIxNCIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNIDAgMCBMIDExLjUgNyBMIDAgMTQgeiIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgc3R5bGU9InN0cm9rZS13aWR0aDogMDsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiPjwvcGF0aD48L21hcmtlcj48bWFya2VyIGlkPSJkaWFncmFtLTFfZmxvd2NoYXJ0LXYyLXBvaW50U3RhcnQtbWFyZ2luIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgdmlld0JveD0iMCAwIDExLjUgMTQiIHJlZlg9IjEiIHJlZlk9IjciIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjExLjUiIG1hcmtlckhlaWdodD0iMTQiIG9yaWVudD0iYXV0byI+PHBvbHlnb24gcG9pbnRzPSIwLDcgMTEuNSwxNCAxMS41LDAiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDA7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ij48L3BvbHlnb24+PC9tYXJrZXI+PG1hcmtlciBpZD0iZGlhZ3JhbS0xX2Zsb3djaGFydC12Mi1jaXJjbGVFbmQiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjExIiByZWZZPSI1IiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VySGVpZ2h0PSIxMSIgb3JpZW50PSJhdXRvIj48Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiPjwvY2lyY2xlPjwvbWFya2VyPjxtYXJrZXIgaWQ9ImRpYWdyYW0tMV9mbG93Y2hhcnQtdjItY2lyY2xlU3RhcnQiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9Ii0xIiByZWZZPSI1IiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VySGVpZ2h0PSIxMSIgb3JpZW50PSJhdXRvIj48Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiPjwvY2lyY2xlPjwvbWFya2VyPjxtYXJrZXIgaWQ9ImRpYWdyYW0tMV9mbG93Y2hhcnQtdjItY2lyY2xlRW5kLW1hcmdpbiIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWT0iNSIgcmVmWD0iMTIuMjUiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjE0IiBtYXJrZXJIZWlnaHQ9IjE0IiBvcmllbnQ9ImF1dG8iPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI1IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAwOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyI+PC9jaXJjbGU+PC9tYXJrZXI+PG1hcmtlciBpZD0iZGlhZ3JhbS0xX2Zsb3djaGFydC12Mi1jaXJjbGVTdGFydC1tYXJnaW4iIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9Ii0yIiByZWZZPSI1IiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hcmtlcldpZHRoPSIxNCIgbWFya2VySGVpZ2h0PSIxNCIgb3JpZW50PSJhdXRvIj48Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgc3R5bGU9InN0cm9rZS13aWR0aDogMDsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiPjwvY2lyY2xlPjwvbWFya2VyPjxtYXJrZXIgaWQ9ImRpYWdyYW0tMV9mbG93Y2hhcnQtdjItY3Jvc3NFbmQiIGNsYXNzPSJtYXJrZXIgY3Jvc3MgZmxvd2NoYXJ0LXYyIiB2aWV3Qm94PSIwIDAgMTEgMTEiIHJlZlg9IjEyIiByZWZZPSI1LjIiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjExIiBtYXJrZXJIZWlnaHQ9IjExIiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0gMSwxIGwgOSw5IE0gMTAsMSBsIC05LDkiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ij48L3BhdGg+PC9tYXJrZXI+PG1hcmtlciBpZD0iZGlhZ3JhbS0xX2Zsb3djaGFydC12Mi1jcm9zc1N0YXJ0IiBjbGFzcz0ibWFya2VyIGNyb3NzIGZsb3djaGFydC12MiIgdmlld0JveD0iMCAwIDExIDExIiByZWZYPSItMSIgcmVmWT0iNS4yIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VySGVpZ2h0PSIxMSIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNIDEsMSBsIDksOSBNIDEwLDEgbCAtOSw5IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyI+PC9wYXRoPjwvbWFya2VyPjxtYXJrZXIgaWQ9ImRpYWdyYW0tMV9mbG93Y2hhcnQtdjItY3Jvc3NFbmQtbWFyZ2luIiBjbGFzcz0ibWFya2VyIGNyb3NzIGZsb3djaGFydC12MiIgdmlld0JveD0iMCAwIDE1IDE1IiByZWZYPSIxNy43IiByZWZZPSI3LjUiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjEyIiBtYXJrZXJIZWlnaHQ9IjEyIiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0gMSwxIEwgMTQsMTQgTSAxLDE0IEwgMTQsMSIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgc3R5bGU9InN0cm9rZS13aWR0aDogMi41OyI+PC9wYXRoPjwvbWFya2VyPjxtYXJrZXIgaWQ9ImRpYWdyYW0tMV9mbG93Y2hhcnQtdjItY3Jvc3NTdGFydC1tYXJnaW4iIGNsYXNzPSJtYXJrZXIgY3Jvc3MgZmxvd2NoYXJ0LXYyIiB2aWV3Qm94PSIwIDAgMTUgMTUiIHJlZlg9Ii0zLjUiIHJlZlk9IjcuNSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXJrZXJXaWR0aD0iMTIiIG1hcmtlckhlaWdodD0iMTIiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTSAxLDEgTCAxNCwxNCBNIDEsMTQgTCAxNCwxIiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAyLjU7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ij48L3BhdGg+PC9tYXJrZXI+PGcgY2xhc3M9InJvb3QiPjxnIGNsYXNzPSJjbHVzdGVycyI+PC9nPjxnIGNsYXNzPSJlZGdlUGF0aHMiPjxwYXRoIGQ9Ik03NC41NTIsNTVMNjkuMzQ5LDU5LjE2N0M2NC4xNDYsNjMuMzMzLDUzLjc0MSw3MS42NjcsNDguNTM5LDc5LjMzM0M0My4zMzYsODcsNDMuMzM2LDk0LDQzLjMzNiw5Ny41TDQzLjMzNiwxMDEiIGlkPSJkaWFncmFtLTEtTF9BX0JfMCIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgc3R5bGU9IjsiIGRhdGEtZWRnZT0idHJ1ZSIgZGF0YS1ldD0iZWRnZSIgZGF0YS1pZD0iTF9BX0JfMCIgZGF0YS1wb2ludHM9Ilczc2llQ0k2TnpRdU5UVXhOekEzTkRjME1qSTJPQ3dpZVNJNk5UVjlMSHNpZUNJNk5ETXVNek0xT1RNM05Td2llU0k2T0RCOUxIc2llQ0k2TkRNdU16TTFPVE0zTlN3aWVTSTZNVEExZlYwPSIgZGF0YS1sb29rPSJjbGFzc2ljIiBtYXJrZXItZW5kPSJ1cmwoI2RpYWdyYW0tMV9mbG93Y2hhcnQtdjItcG9pbnRFbmQpIj48L3BhdGg+PHBhdGggZD0iTTEzMy4yMzcsNTVMMTM4LjQ0LDU5LjE2N0MxNDMuNjQzLDYzLjMzMywxNTQuMDQ4LDcxLjY2NywxNTkuMjUsNzkuMzMzQzE2NC40NTMsODcsMTY0LjQ1Myw5NCwxNjQuNDUzLDk3LjVMMTY0LjQ1MywxMDEiIGlkPSJkaWFncmFtLTEtTF9BX0NfMCIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgc3R5bGU9IjsiIGRhdGEtZWRnZT0idHJ1ZSIgZGF0YS1ldD0iZWRnZSIgZGF0YS1pZD0iTF9BX0NfMCIgZGF0YS1wb2ludHM9Ilczc2llQ0k2TVRNekxqSXpOek0xTlRBeU5UYzNNekU0TENKNUlqbzFOWDBzZXlKNElqb3hOalF1TkRVek1USTFMQ0o1SWpvNE1IMHNleUo0SWpveE5qUXVORFV6TVRJMUxDSjVJam94TURWOVhRPT0iIGRhdGEtbG9vaz0iY2xhc3NpYyIgbWFya2VyLWVuZD0idXJsKCNkaWFncmFtLTFfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSI+PC9wYXRoPjxwYXRoIGQ9Ik00My4zMzYsMTUyTDQzLjMzNiwxNTYuMTY3QzQzLjMzNiwxNjAuMzMzLDQzLjMzNiwxNjguNjY3LDQ4LjAxOCwxNzYuNTgzQzUyLjcsMTg0LjUsNjIuMDY1LDE5Miw2Ni43NDcsMTk1Ljc1TDcxLjQzLDE5OS41IiBpZD0iZGlhZ3JhbS0xLUxfQl9EXzAiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIHN0eWxlPSI7IiBkYXRhLWVkZ2U9InRydWUiIGRhdGEtZXQ9ImVkZ2UiIGRhdGEtaWQ9IkxfQl9EXzAiIGRhdGEtcG9pbnRzPSJXM3NpZUNJNk5ETXVNek0xT1RNM05Td2llU0k2TVRVeWZTeDdJbmdpT2pRekxqTXpOVGt6TnpVc0lua2lPakUzTjMwc2V5SjRJam8zTkM0MU5URTNNRGMwTnpReU1qWTRMQ0o1SWpveU1ESjlYUT09IiBkYXRhLWxvb2s9ImNsYXNzaWMiIG1hcmtlci1lbmQ9InVybCgjZGlhZ3JhbS0xX2Zsb3djaGFydC12Mi1wb2ludEVuZCkiPjwvcGF0aD48cGF0aCBkPSJNMTY0LjQ1MywxNTJMMTY0LjQ1MywxNTYuMTY3QzE2NC40NTMsMTYwLjMzMywxNjQuNDUzLDE2OC42NjcsMTU5Ljc3MSwxNzYuNTgzQzE1NS4wODksMTg0LjUsMTQ1LjcyNCwxOTIsMTQxLjA0MiwxOTUuNzVMMTM2LjM1OSwxOTkuNSIgaWQ9ImRpYWdyYW0tMS1MX0NfRF8wIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBzdHlsZT0iOyIgZGF0YS1lZGdlPSJ0cnVlIiBkYXRhLWV0PSJlZGdlIiBkYXRhLWlkPSJMX0NfRF8wIiBkYXRhLXBvaW50cz0iVzNzaWVDSTZNVFkwTGpRMU16RXlOU3dpZVNJNk1UVXlmU3g3SW5naU9qRTJOQzQwTlRNeE1qVXNJbmtpT2pFM04zMHNleUo0SWpveE16TXVNak0zTXpVMU1ESTFOemN6TVRnc0lua2lPakl3TW4xZCIgZGF0YS1sb29rPSJjbGFzc2ljIiBtYXJrZXItZW5kPSJ1cmwoI2RpYWdyYW0tMV9mbG93Y2hhcnQtdjItcG9pbnRFbmQpIj48L3BhdGg+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWxzIj48ZyBjbGFzcz0iZWRnZUxhYmVsIj48ZyBjbGFzcz0ibGFiZWwiIGRhdGEtaWQ9IkxfQV9CXzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIj48dGV4dCB5PSItMTAuMSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+PHRzcGFuIGNsYXNzPSJ0ZXh0LW91dGVyLXRzcGFuIHJvdyIgeD0iMCIgeT0iLTAuMWVtIiBkeT0iMS4xZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiPjwvdHNwYW4+PC90ZXh0PjwvZz48L2c+PGc+PHJlY3QgY2xhc3M9ImJhY2tncm91bmQiIHN0eWxlPSJzdHJva2U6IG5vbmUiPjwvcmVjdD48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgY2xhc3M9ImxhYmVsIiBkYXRhLWlkPSJMX0FfQ18wIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSI+PHRleHQgeT0iLTEwLjEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjx0c3BhbiBjbGFzcz0idGV4dC1vdXRlci10c3BhbiByb3ciIHg9IjAiIHk9Ii0wLjFlbSIgZHk9IjEuMWVtIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj48L3RzcGFuPjwvdGV4dD48L2c+PC9nPjxnPjxyZWN0IGNsYXNzPSJiYWNrZ3JvdW5kIiBzdHlsZT0ic3Ryb2tlOiBub25lIj48L3JlY3Q+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIGNsYXNzPSJsYWJlbCIgZGF0YS1pZD0iTF9CX0RfMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMCkiPjx0ZXh0IHk9Ii0xMC4xIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj48dHNwYW4gY2xhc3M9InRleHQtb3V0ZXItdHNwYW4gcm93IiB4PSIwIiB5PSItMC4xZW0iIGR5PSIxLjFlbSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+PC90c3Bhbj48L3RleHQ+PC9nPjwvZz48Zz48cmVjdCBjbGFzcz0iYmFja2dyb3VuZCIgc3R5bGU9InN0cm9rZTogbm9uZSI+PC9yZWN0PjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVsIj48ZyBjbGFzcz0ibGFiZWwiIGRhdGEtaWQ9IkxfQ19EXzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIj48dGV4dCB5PSItMTAuMSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+PHRzcGFuIGNsYXNzPSJ0ZXh0LW91dGVyLXRzcGFuIHJvdyIgeD0iMCIgeT0iLTAuMWVtIiBkeT0iMS4xZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiPjwvdHNwYW4+PC90ZXh0PjwvZz48L2c+PGc+PHJlY3QgY2xhc3M9ImJhY2tncm91bmQiIHN0eWxlPSJzdHJva2U6IG5vbmUiPjwvcmVjdD48L2c+PC9nPjxnIGNsYXNzPSJub2RlcyI+PGcgY2xhc3M9Im5vZGUgZGVmYXVsdCIgaWQ9ImRpYWdyYW0tMS1mbG93Y2hhcnQtQS0wIiBkYXRhLWxvb2s9ImNsYXNzaWMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMy44OTQ1MzEyNSwgMzEuNSkiPjxyZWN0IGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiIHN0eWxlPSIiIHg9Ii0zNS41IiB5PSItMjMuNSIgd2lkdGg9IjcxIiBoZWlnaHQ9IjQ3Ij48L3JlY3Q+PGcgY2xhc3M9ImxhYmVsIiBzdHlsZT0iIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAtOC41KSI+PHJlY3Q+PC9yZWN0PjxnPjxyZWN0IGNsYXNzPSJiYWNrZ3JvdW5kIiBzdHlsZT0ic3Ryb2tlOiBub25lIj48L3JlY3Q+PHRleHQgeT0iLTEwLjEiIHN0eWxlPSIiPjx0c3BhbiBjbGFzcz0idGV4dC1vdXRlci10c3BhbiByb3ciIHg9IjAiIHk9Ii0wLjFlbSIgZHk9IjEuMWVtIj48dHNwYW4gZm9udC1zdHlsZT0ibm9ybWFsIiBjbGFzcz0idGV4dC1pbm5lci10c3BhbiIgZm9udC13ZWlnaHQ9Im5vcm1hbCI+QTwvdHNwYW4+PC90c3Bhbj48L3RleHQ+PC9nPjwvZz48L2c+PGcgY2xhc3M9Im5vZGUgZGVmYXVsdCIgaWQ9ImRpYWdyYW0tMS1mbG93Y2hhcnQtQi0xIiBkYXRhLWxvb2s9ImNsYXNzaWMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQzLjMzNTkzNzUsIDEyOC41KSI+PHJlY3QgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIgc3R5bGU9IiIgeD0iLTM1LjMzNTkzNzUiIHk9Ii0yMy41IiB3aWR0aD0iNzAuNjcxODc1IiBoZWlnaHQ9IjQ3Ij48L3JlY3Q+PGcgY2xhc3M9ImxhYmVsIiBzdHlsZT0iIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAtOC41KSI+PHJlY3Q+PC9yZWN0PjxnPjxyZWN0IGNsYXNzPSJiYWNrZ3JvdW5kIiBzdHlsZT0ic3Ryb2tlOiBub25lIj48L3JlY3Q+PHRleHQgeT0iLTEwLjEiIHN0eWxlPSIiPjx0c3BhbiBjbGFzcz0idGV4dC1vdXRlci10c3BhbiByb3ciIHg9IjAiIHk9Ii0wLjFlbSIgZHk9IjEuMWVtIj48dHNwYW4gZm9udC1zdHlsZT0ibm9ybWFsIiBjbGFzcz0idGV4dC1pbm5lci10c3BhbiIgZm9udC13ZWlnaHQ9Im5vcm1hbCI+QjwvdHNwYW4+PC90c3Bhbj48L3RleHQ+PC9nPjwvZz48L2c+PGcgY2xhc3M9Im5vZGUgZGVmYXVsdCIgaWQ9ImRpYWdyYW0tMS1mbG93Y2hhcnQtQy0zIiBkYXRhLWxvb2s9ImNsYXNzaWMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2NC40NTMxMjUsIDEyOC41KSI+PHJlY3QgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIgc3R5bGU9IiIgeD0iLTM1Ljc4MTI1IiB5PSItMjMuNSIgd2lkdGg9IjcxLjU2MjUiIGhlaWdodD0iNDciPjwvcmVjdD48ZyBjbGFzcz0ibGFiZWwiIHN0eWxlPSIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIC04LjUpIj48cmVjdD48L3JlY3Q+PGc+PHJlY3QgY2xhc3M9ImJhY2tncm91bmQiIHN0eWxlPSJzdHJva2U6IG5vbmUiPjwvcmVjdD48dGV4dCB5PSItMTAuMSIgc3R5bGU9IiI+PHRzcGFuIGNsYXNzPSJ0ZXh0LW91dGVyLXRzcGFuIHJvdyIgeD0iMCIgeT0iLTAuMWVtIiBkeT0iMS4xZW0iPjx0c3BhbiBmb250LXN0eWxlPSJub3JtYWwiIGNsYXNzPSJ0ZXh0LWlubmVyLXRzcGFuIiBmb250LXdlaWdodD0ibm9ybWFsIj5DPC90c3Bhbj48L3RzcGFuPjwvdGV4dD48L2c+PC9nPjwvZz48ZyBjbGFzcz0ibm9kZSBkZWZhdWx0IiBpZD0iZGlhZ3JhbS0xLWZsb3djaGFydC1ELTUiIGRhdGEtbG9vaz0iY2xhc3NpYyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAzLjg5NDUzMTI1LCAyMjUuNSkiPjxyZWN0IGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiIHN0eWxlPSIiIHg9Ii0zNS43ODEyNSIgeT0iLTIzLjUiIHdpZHRoPSI3MS41NjI1IiBoZWlnaHQ9IjQ3Ij48L3JlY3Q+PGcgY2xhc3M9ImxhYmVsIiBzdHlsZT0iIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAtOC41KSI+PHJlY3Q+PC9yZWN0PjxnPjxyZWN0IGNsYXNzPSJiYWNrZ3JvdW5kIiBzdHlsZT0ic3Ryb2tlOiBub25lIj48L3JlY3Q+PHRleHQgeT0iLTEwLjEiIHN0eWxlPSIiPjx0c3BhbiBjbGFzcz0idGV4dC1vdXRlci10c3BhbiByb3ciIHg9IjAiIHk9Ii0wLjFlbSIgZHk9IjEuMWVtIj48dHNwYW4gZm9udC1zdHlsZT0ibm9ybWFsIiBjbGFzcz0idGV4dC1pbm5lci10c3BhbiIgZm9udC13ZWlnaHQ9Im5vcm1hbCI+RDwvdHNwYW4+PC90c3Bhbj48L3RleHQ+PC9nPjwvZz48L2c+PC9nPjwvZz48L2c+PGRlZnM+PGZpbHRlciBpZD0iZGlhZ3JhbS0xLWRyb3Atc2hhZG93IiBoZWlnaHQ9IjEzMCUiIHdpZHRoPSIxMzAlIj48ZmVEcm9wU2hhZG93IGR4PSI0IiBkeT0iNCIgc3RkRGV2aWF0aW9uPSIwIiBmbG9vZC1vcGFjaXR5PSIwLjA2IiBmbG9vZC1jb2xvcj0iIzAwMDAwMCI+PC9mZURyb3BTaGFkb3c+PC9maWx0ZXI+PC9kZWZzPjxkZWZzPjxmaWx0ZXIgaWQ9ImRpYWdyYW0tMS1kcm9wLXNoYWRvdy1zbWFsbCIgaGVpZ2h0PSIxNTAlIiB3aWR0aD0iMTUwJSI+PGZlRHJvcFNoYWRvdyBkeD0iMiIgZHk9IjIiIHN0ZERldmlhdGlvbj0iMCIgZmxvb2Qtb3BhY2l0eT0iMC4wNiIgZmxvb2QtY29sb3I9IiMwMDAwMDAiPjwvZmVEcm9wU2hhZG93PjwvZmlsdGVyPjwvZGVmcz48L3N2Zz4="></pre>
-<figcaption><a class="self-link" href="#Mermaidvoorbeeld">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
-</figure></section>
+      <section class="chapter" id="implementatie-ondersteuning"><div class="header-wrapper"><h2 id="190C9848"><bdi class="secno">4. </bdi>Implementatie ondersteuning</h2><a class="self-link" href="#190C9848" aria-label="Permalink for Section 4."></a></div><p>Het in gebruik nemen van (een nieuwe versie van) de NLDT Architectuur staat centraal in deze fase. Hiervoor leveren we verschillende zaken op. Wij ondersteunen de implementatie met onder meer het NLDT beheerteam.</p>
+<section id="opleiding-en-advies"><div class="header-wrapper"><h3 id="064739D0"><bdi class="secno">4.1 </bdi>Opleiding en advies</h3><a class="self-link" href="#064739D0" aria-label="Permalink for Section 4.1"></a></div><p>Opleiding en advies kunnen van toegevoegde waarde zijn voor implementatie ondersteuning van de gebruikers van de NLDT Architectuur. Middelen als documentatie, bijeenkomsten en workshops worden ingezet om de kennis over de wijzigingen in de nieuwe architectuur te delen en te ondersteunen bij de implementatie. Ook publicaties in vakbladen kunnen worden ingezet ter ondersteuning.</p>
+</section><section id="communicatie"><div class="header-wrapper"><h3 id="09C256A8"><bdi class="secno">4.2 </bdi>Communicatie</h3><a class="self-link" href="#09C256A8" aria-label="Permalink for Section 4.2"></a></div><p>Het hele wijzigingsproces staat of valt met een goede communicatie. Onder goede communicatie wordt verstaan het tijdig leveren van de juiste informatie aan de juiste belanghebbenden. Dit betreft de proceskant alsook de producten die er worden opgeleverd.
+<br>
+<br>
+<b>Website(s)</b>
+<br>
+<br>
+De actuele vigerende versie van de NLDT Architectuur is via het&nbsp;<a href="https://docs.geostandaarden.nl/nldt/nldt-ra/" target="_blank">documentenregister van Nederlandse geo-standaarden</a>&nbsp;in te zien.
+Wijzigingen in het NLDT Architectuur worden bekendgemaakt via de <a href="https://www.geonovum.nl/" target="_blank">Geonovum website</a>.
+<br>
+De laatste werkversie van de NLDT Architectuur is altijd via de <a href="https://geonovum.github.io/NLDT-Architectuur/" target="_blank">github site</a>&nbsp;in te zien.
+<br>
+<b>Nieuwsbrief</b>
+<br>
+<br>
+Wijzigingen in de NLDT Architectuur worden bekendgemaakt in de nieuwsbrief van Geonovum.
+<br>
+<br>
+<b>Publieke consultatie</b>
+<br>
+<br>
+Bij X en Y-wijzigingen wordt in sommige gevallen een publieke consultatie in het wijzigingsproces gehouden. De wijzigingen in de architectuur worden dan voor een bepaalde, afgesproken periode voorgelegd ter commentaar aan alle belanghebbenden en geïnteresseerden door middel van een publieke consultatie via de&nbsp;<a href="https://www.geonovum.nl/" target="_blank">Geonovum website</a>&nbsp;en de nieuwsbrief van Geonovum.</p>
+</section><section id="validatie-en-certificatie"><div class="header-wrapper"><h3 id="09C256A9"><bdi class="secno">4.3 </bdi>Validatie en certificatie</h3><a class="self-link" href="#09C256A9" aria-label="Permalink for Section 4.3"></a></div><p>In het algemeen geldt dat een referentie architectuur met name als afwegingskader fungeert en patronen beschrijft die idealiter gevolgd moeten worden. Het is lastig om hier strikte validatie of certificatie voor uit te voeren. </p>
+<p>Er worden echter wel een aantal standaarden / API's voorgeschreven waarop getoetst kan worden in hoeverre deze juist geïmplementeerd zijn.
+Hiervoor kan de <a href="https://geonovum.github.io/ogc-checker/" target="_blank">Geonovum OGC-Checker</a> gebruikt worden.</p>
+<p>Een andere mogelijkheid is het inzetten van de <a href="https://cite.opengeospatial.org/teamengine/" target="_blank">OGC Validator</a>.</p>
+<p>Het Digitale Tweelingen team van Geonovum kan ondersteuning bieden voor het gebruiken van de OGC-Checker of de OGC Validator, en kan helpen met de beoordeling in hoeverre een oplossing of implementatie de NLDT Referentie Architectuur volgt.</p>
+</section></section>
+      <section class="chapter" id="escalatieprocedure-en-klachtenafhandeling"><div class="header-wrapper"><h2 id="31BF4A03"><bdi class="secno">5. </bdi>Escalatieprocedure en klachtenafhandeling</h2><a class="self-link" href="#31BF4A03" aria-label="Permalink for Section 5."></a></div><p>In voorgaande hoofdstukken gaat het protocol ervan uit dat wijzigingen 'in vrijheid' worden doorgevoerd. In het beheerproces wordt geen rekening gehouden met noodzakelijke wijzigingen, die met spoed of onder druk van bijvoorbeeld (externe) nieuwe wet- en regelgeving moeten worden doorgevoerd. Hiervoor bestaat een escalatieprocedure. Daarnaast kunnen ook klachten ingediend worden over het beheerproces en zijn afspraken gemaakt over de klachtenafhandeling.</p>
+<section id="escalatieprocedure"><div class="header-wrapper"><h3 id="63014198"><bdi class="secno">5.1 </bdi>Escalatieprocedure</h3><a class="self-link" href="#63014198" aria-label="Permalink for Section 5.1"></a></div><p>Er is sprake van een escalatieprocedure als er een wijziging noodzakelijk is die niet in het reguliere wijzigingsproces doorgevoerd kan worden, omdat dit naar verwachting en inschatting te lang duurt. Een uitputtende lijst met situaties en criteria wanneer escalatie van toepassing is, valt op voorhand niet te geven. Maar voor de beeldvorming: het gaat om situaties waarbij het niet doorvoeren van een bepaalde noodzakelijke wijziging leidt tot onaanvaardbare risico's voor het werkveld of het onmogelijk uitvoeren (vanwege bijvoorbeeld tegenstrijdige wetten) van werkzaamheden.
+De escalatieprocedure wordt niet gebruikt om reguliere wijzigingen sneller door te kunnen voeren. Er is geen vastgelegd proces om de escalatieprocedure te doorlopen, omdat verschillende situaties van escalatie wellicht tot een verschillende wijze van handelen moeten leiden. In plaats daarvan zijn onderstaande sturende principes leidend om verantwoordelijkheden te duiden.
+<br>
+<br>
+<b>Signalering</b>
+<br>
+<br>
+Uit het werkveld kunnen signalen ontstaan dat met spoed een wijziging doorgevoerd zou moeten worden. Het is vooraf niet aan te geven uit welke kanalen deze geluiden zullen ontstaan. Het is wel van belang om de rol van Geonovum te onderkennen als antennefunctie voor het werkveld. In ieder geval zullen deze signalen op enig moment de opdrachtgever of Geonovum bereiken, en op dat moment zal er overleg gevoerd worden over deze signalen.
+<br>
+<br>
+<b>Overleg</b>
+<br>
+<br>
+Bij de besluitvorming binnen de escalatieprocedure wordt er in principe overleg gevoerd tussen Geonovum en de opdrachtgever. Beide partijen raadplegen de betrokkenen daar waar nodig.
+<br>
+<br>
+<b>Besluitvorming</b>
+<br>
+<br>
+De beoordeling of de escalatieprocedure van toepassing is, wordt genomen door de voorzitter van het gremium bij de opdrachtgever dat de beheeropdracht monitort, dan wel de contactpersoon bij de opdrachtgever. Ook het besluit welke wijzigingen er precies doorgevoerd moeten worden en op welke manier, wordt genomen door dezelfde persoon.
+<br>
+<br>
+<b>Coördinatie</b>
+<br>
+<br>
+De coördinatie tijdens de escalatieprocedure wordt uitgevoerd door de voorzitter van het gremium dat de beheeropdracht monitort, dan wel de contactpersoon bij de opdrachtgever.
+<br>
+<br>
+<b>Communicatie met het werkveld</b>
+<br>
+<br>
+De communicatie met het werkveld wordt uitgevoerd door Geonovum. Als beheerder van de architectuur wordt verwacht dat Geonovum de meest directe contacten hebben met het werkveld.</p>
+</section><section id="klachtenafhandeling"><div class="header-wrapper"><h3 id="66D79BE4"><bdi class="secno">5.2 </bdi>Klachtenafhandeling</h3><a class="self-link" href="#66D79BE4" aria-label="Permalink for Section 5.2"></a></div><p>Het garanderen van het serieus nemen van klachten kan alleen door deze volgens een zorgvuldige procedure te behandelen. Klachten kunnen ook beschouwd worden als verbetersuggestie. We onderscheiden daarom twee verschillende type klachten met betrekking tot de architectuur:</p>
+<ul>
+<li>Klachten over de toepassingsmogelijkheid van de architectuur;</li>
+<li>Klachten over het beheer van de architectuur.</li>
+</ul>
+<p>In het eerste geval is het feitelijk geen klacht maar een wens of eis tot het aanpassen van de architectuur. Het beheerteam van de architectuur neemt de klacht in behandeling en neemt de klacht op als wijzigingsverzoek en niet als klacht. In dit geval doet Geonovum haar werk goed. </p>
+<p>In het tweede geval is er sprake van ontevredenheid over de uitvoering van het beheerproces van de architectuur en betreft de klacht niet de inhoud, maar het proces zelf. De indiener is van mening dat Geonovum, dan wel de werkgroep het werk niet naar behoren uitvoert. In dat geval wordt de klacht doorgezet naar de opdrachtgever. Het indienen van klachten loopt in principe via de Helpdesk geo-standaarden.</p>
+</section></section>
 
- 
-
-
-
-
-
-
-
-<section id="conformance"><div class="header-wrapper"><h2 id="x4-conformiteit"><bdi class="secno">4. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 4."></a></div><p>Naast onderdelen die als niet-normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet-normatief. Verder is alles in dit document normatief.</p></section>
-<section id="tof"><div class="header-wrapper"><h2 id="x5-lijst-met-figuren"><bdi class="secno">5. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 5."></a></div><ul class="tof">
+      <section id="tof" class="appendix"><div class="header-wrapper"><h2 id="a-lijst-met-figuren"><bdi class="secno">A. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Appendix A."></a></div><ul class="tof">
         <li class="tofline">
-    <a class="tocxref" href="#fig-onderschrift"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Onderschrift</span></a>
+    <a class="tocxref" href="#d6aBfBiAa"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Van wijzigingsverzoek tot een nieuwe versie van de standaard</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#Mermaidvoorbeeld"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Mermaid voorbeeld</span></a>
+    <a class="tocxref" href="#fig-fasen-wijzigingsproces"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Fasen wijzigingsproces</span></a>
   </li>
       </ul></section>
-<section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
-    <div class="header-wrapper"><h3 id="a-1-termen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Termen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
-    <ul class="index">
-    <li>
-      <a class="index-term" href="#dfn-definitie">Definitie</a> 
-    <span class="print-only">§2.1</span></li>
-  </ul>
-  </section><section id="index-defined-elsewhere">
-    <div class="header-wrapper"><h3 id="a-2-termen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Termen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
-    <ul class="index">
-    
-  </ul>
-  </section></section>
 
 
 
-<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
-    <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
-    <dl class="bibliography"><dt id="bib-mim12">[MIM12]</dt><dd>
-      <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/"><cite>MIM - Metamodel Informatie Modellering (Versie 1.2)</cite></a>.  Geonovum. 2024-06-13. Definitief. URL: <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/">https://docs.geostandaarden.nl/mim/def-st-mim-20240613/</a>
-    </dd><dt id="bib-semver">[SemVer]</dt><dd>
-      <a href="https://semver.org"><cite>Semantic Versioning 2.0.0</cite></a>. T. Preston-Werner. June 2013. URL: <a href="https://semver.org">https://semver.org</a>
-    </dd></dl>
-  </section></section><p role="navigation" id="back-to-top">
+<p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Terug naar boven">↑</abbr></a>
-  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="#dfn-definitie" aria-label="Permalink for definition: Definitie. Activate to close this dialog.">Permalink</a>
-         
-        
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-      <a href="#ref-for-dfn-definitie-1" title="§ 2.3 Referenties">§ 2.3 Referenties</a> 
-    </li>
-  </ul>
-    </div><script id="respec-dfn-panel">(() => {
+  </p><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
   document.respec.ready.then(setupPanel);
@@ -1830,4 +1874,4 @@ function hidePanel(panel) {
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script><div class="sidelabel">Geonovum Handreiking - Document</div><script src="https://gitdocumentatie.logius.nl/publicatie/respec/fixup.js"></script></body></html>
+})()</script><div class="sidelabel">Geonovum Handreiking - Werkversie</div><script src="https://gitdocumentatie.logius.nl/publicatie/respec/fixup.js"></script></body></html>
