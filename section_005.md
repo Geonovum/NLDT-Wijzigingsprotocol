@@ -50,8 +50,8 @@ In overleg met de Werkgroep NLDT Architectuur worden Z wijzigingen in de volgend
 ## Betrokkenen {#40EBAE8E}
 De volgende betrokkenen spelen een rol in het wijzigingsproces van de NLDT Referentie Architectuur:
 <table style='width: 100%;'><caption></caption>
-<colgroup><col id='col1' style='width: 24.973779279804216%;'>
-<col id='col2' style='width: 75.02622072019578%;'>
+<colgroup><col id='col1b' style='width: 24.973779279804216%;'>
+<col id='col2b' style='width: 75.02622072019578%;'>
 </colgroup>
 <thead><tr><th style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000;'><p id='502496B4'><b><span style='color: #FFFFFF;'>Rol</span></b></th>
 <th style='border-top: 0pt none #000000; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; '>Stakeholder</span></b></th>
