@@ -15,32 +15,34 @@ Uit het werkveld kunnen signalen ontstaan dat met spoed een wijziging doorgevoer
 <b>Overleg</b>
 <br/>
 <br/>
-Bij de besluitvorming binnen de escalatieprocedure wordt er in principe overleg gevoerd tussen de opdrachtgever voor het beheer van de betreffende standaard en Geonovum. Beide partijen raadplegen de betrokkenen daar waar nodig.
+Bij de besluitvorming binnen de escalatieprocedure wordt er in principe overleg gevoerd tussen Geonovum en de opdrachtgever. Beide partijen raadplegen de betrokkenen daar waar nodig.
 <br/>
 <br/>
 <b>Besluitvorming</b>
 <br/>
 <br/>
-De beoordeling of de escalatieprocedure van toepassing is, wordt genomen door de trekker van het Basisprogramma, dan wel de contactpersoon bij de Programmaraad. Ook het besluit <i>welke </i>wijzigingen er precies doorgevoerd moeten worden en op welke manier, wordt genomen door dezelfde persoon.
+De beoordeling of de escalatieprocedure van toepassing is, wordt genomen door de voorzitter van het gremium bij de opdrachtgever dat de beheeropdracht monitort, dan wel de contactpersoon bij de opdrachtgever. Ook het besluit welke wijzigingen er precies doorgevoerd moeten worden en op welke manier, wordt genomen door dezelfde persoon.
 <br/>
 <br/>
 <b>Coördinatie</b>
 <br/>
 <br/>
-De coördinatie tijdens de escalatieprocedure wordt uitgevoerd door de trekker van het Basisprogramma, dan wel de contactpersoon bij de Programmaraad.
+De coördinatie tijdens de escalatieprocedure wordt uitgevoerd door de voorzitter van het gremium dat de beheeropdracht monitort, dan wel de contactpersoon bij de opdrachtgever.
 <br/>
 <br/>
 <b>Communicatie met het werkveld</b>
 <br/>
 <br/>
-De communicatie met het werkveld wordt uitgevoerd door Geonovum. Als beheerder van het Raamwerk wordt verwacht dat Geonovum het meest directe contacten heeft met het werkveld.
+De communicatie met het werkveld wordt uitgevoerd door Geonovum. Als beheerder van de architectuur wordt verwacht dat Geonovum de meest directe contacten hebben met het werkveld.
 
 ## Klachtenafhandeling {#66D79BE4}
 
-Het garanderen van het serieus nemen van klachten kan alleen door deze volgens een zorgvuldige procedure te behandelen. Klachten kunnen ook beschouwd worden als verbetersuggestie. Twee verschillende typen klachten met betrekking tot het NLDT Architectuur worden onderscheiden:
-<ul><li>Klachten over de toepassingsmogelijkheid van het Raamwerk;</li>
-<li>Klachten over het beheer van het Raamwerk.</li>
-</ul>
-In het eerste geval is het feitelijk geen klacht maar een wens of eis tot het aanpassen van het Raamwerk. Het beheer van de betreffen het Raamwerk neemt de klacht in behandeling en neemt de klacht op als wijzigingsverzoek en niet als klacht. In dit geval doet Geonovum haar werk goed. 
-In het tweede geval is er sprake van ontevredenheid over de uitvoering van het beheerproces van het Raamwerk en betreft de klacht niet de inhoud, maar het Raamwerk zelf. De indiener is van mening dat Geonovum, dan wel de werkgroep het werk niet naar behoren uitvoert. In dat geval wordt de klacht doorgezet naar de Programmaraad.
-Het indienen van klachten loopt in principe via de Helpdesk geo-standaarden.
+Het garanderen van het serieus nemen van klachten kan alleen door deze volgens een zorgvuldige procedure te behandelen. Klachten kunnen ook beschouwd worden als verbetersuggestie. We onderscheiden daarom twee verschillende type klachten met betrekking tot de architectuur:
+
+- Klachten over de toepassingsmogelijkheid van de architectuur;
+- Klachten over het beheer van de architectuur.
+
+
+In het eerste geval is het feitelijk geen klacht maar een wens of eis tot het aanpassen van de architectuur. Het beheerteam van de architectuur neemt de klacht in behandeling en neemt de klacht op als wijzigingsverzoek en niet als klacht. In dit geval doet Geonovum haar werk goed. 
+
+In het tweede geval is er sprake van ontevredenheid over de uitvoering van het beheerproces van de architectuur en betreft de klacht niet de inhoud, maar het proces zelf. De indiener is van mening dat Geonovum, dan wel de werkgroep het werk niet naar behoren uitvoert. In dat geval wordt de klacht doorgezet naar de opdrachtgever. Het indienen van klachten loopt in principe via de Helpdesk geo-standaarden. 

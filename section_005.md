@@ -19,7 +19,7 @@ Een release is een nieuwe uitgave van de architectuur. De wijzigingen binnen een
 
 <ul><li><b>X-wijziging.</b> Indien de NLDT Referentie Architectuur een majeure update krijgt met relatief veel nieuwe en ingrijpende wijzigingen dan wordt de architectuur als geheel aangeduid met een X wijziging. Frequentie: op voorstel van Geonovum en in overleg met de NLDT Stuurgroep.</li>
 </ul>
-<ul><li><b>Y-wijziging.</b> Indien de NLDT Referentie Architectuur een beperkte update krijgt met een relatief klien aantal en minder ingrijpende wijzigingen dan wordt de architectuur als geheel aangeduid met een Y wijziging.  
+<ul><li><b>Y-wijziging.</b> Indien de NLDT Referentie Architectuur een beperkte update krijgt met een relatief klein aantal en minder ingrijpende wijzigingen dan wordt de architectuur als geheel aangeduid met een Y wijziging.  
 Frequentie: op voorstel van Geonovum en in overleg met de NLDT Stuurgroep.</li>
 </ul>
 <ul><li><b>Z-wijziging. </b>Dit zijn bugs/fouten of aanvullingen in een toelichting, die geen impact hebben op de wezenlijke architectuur. 
@@ -37,14 +37,15 @@ Voor het onderhoud en de ondersteuning van een oude versie van een standaard gel
 Na het uitbrengen van een nieuwe versie van de architectuur blijven oudere versies beschikbaar en zijn vindbaar via de Geonovum website.
 
 ## Proces varianten {#317FB4EA}
-In paragraaf releasebeleid zijn de X, Y en Z wijzigingen uitgelegd. Wijzigingen kennen drie procesvarianten: eén voor X wijzigingen, één voor Y wijzigingen en één voor Z wijzigingen.
+In paragraaf [2.1](#releasebeleid-3ee7fc49) releasebeleid zijn de X, Y en Z wijzigingen uitgelegd. Wijzigingen kennen drie procesvarianten. Eén voor X wijzigingen, één voor Y wijzigingen en één voor Z wijzigingen.
 De start van het proces is voor alle varianten hetzelfde. Op de [github repository](https://github.com/Geonovum/NLDT-Architectuur/issues) wordt een issue ingediend. De impact van deze wijziging wordt door de <b>Werkgroep NLDT Architectuur </b>beoordeeld. Deze eerste impactanalyse beoordeelt tot welke SemVer categorie de wijziging hoort en wat de effecten van de wijziging zijn. 
 
 
 <b>Proces voor X en Y wijzigingen</b>
 X en Y wijzigingen vergen volledige afstemming en het doorlopen van alle in paragraaf 5.1 beschreven fasen: Inhoud, Toetsing, Besluitvorming en Implementatie. Voor de inhoudelijke fase wordt een werkgroep gestart met daarin deskundigen (experts). Het resultaat van de werkgroep is een wijzigingsvoorstel dat in de Werkgroep NLDT Architectuur en in het overleg van de <b>NLDT Stuurgroep</b> met externe stakeholders wordt besproken. Y en X wijzigingen worden altijd voorgelegd aan het <b>GI-Beraad</b>, die stelt een nieuwe versie van de NLDT Architectuur vast.
+
 <b>Proces voor Z wijzigingen</b>
-In overleg met de Werkgroep NLDT Architectuur worden Z wijzigingen in de volgende release opgenomen. De inhoudelijke fase wordt door het beheer van de architectuur uitgevoerd. Besluitvorming vindt plaats in afstemming met de Werkgroep. Implementatie vindt plaats door het publiceren van de wijziging op de Geonovum website.
+In overleg met de Werkgroep NLDT Architectuur worden Z wijzigingen in de volgende release opgenomen. De inhoudelijke fase wordt door het beheerteam van de architectuur uitgevoerd. Besluitvorming vindt plaats in afstemming met de Werkgroep. Implementatie vindt plaats door het publiceren van de wijziging op de Geonovum website.
 
 ## Betrokkenen {#40EBAE8E}
 De volgende betrokkenen spelen een rol in het wijzigingsproces van de NLDT Referentie Architectuur:
