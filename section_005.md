@@ -37,7 +37,7 @@ Voor het onderhoud en de ondersteuning van een oude versie van een standaard gel
 Na het uitbrengen van een nieuwe versie van de architectuur blijven oudere versies beschikbaar en zijn vindbaar via de Geonovum website.
 
 ## Proces varianten {#317FB4EA}
-In paragraaf [2.1](#releasebeleid-3ee7fc49) releasebeleid zijn de X, Y en Z wijzigingen uitgelegd. Wijzigingen kennen drie procesvarianten. Eén voor X wijzigingen, één voor Y wijzigingen en één voor Z wijzigingen.
+In paragraaf 2.1 releasebeleid zijn de X, Y en Z wijzigingen uitgelegd. Wijzigingen kennen drie procesvarianten. Eén voor X wijzigingen, één voor Y wijzigingen en één voor Z wijzigingen.
 De start van het proces is voor alle varianten hetzelfde. Op de [github repository](https://github.com/Geonovum/NLDT-Architectuur/issues) wordt een issue ingediend. De impact van deze wijziging wordt door de <b>Werkgroep NLDT Architectuur </b>beoordeeld. Deze eerste impactanalyse beoordeelt tot welke SemVer categorie de wijziging hoort en wat de effecten van de wijziging zijn. 
 
 
