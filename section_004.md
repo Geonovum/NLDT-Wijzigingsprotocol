@@ -35,8 +35,8 @@ In dit wijzigingsprotocol staan de sturende principes achter het wijzigingsproce
 <tr><td style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; '><p id='0BFC95EB'>NLDT expertgroep</td>
 <td style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; '><p id='74100686'>Een werkgroep bestaande uit experts uit het werkveld, die wijzigingsvoorstellen voor de architectuur beoordelen, en advies geven.</td>
 </tr>
-<tr><td style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; '><p id='0BFC95EB'>NLDT beheerteam</td>
-<td style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; '><p id='74100686'>Een team bestaande uit leden van Geonovum en het ministerie, die het dagelijks beheer uitvoeren en wijzigingsvoorstellen voor de architectuur opstellen en na accordering verwerken in de architectuur. </td>
+<tr><td style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; '><p id='0BFC95EC'>NLDT beheerteam</td>
+<td style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; '><p id='74100687'>Een team bestaande uit leden van Geonovum en het ministerie, die het dagelijks beheer uitvoeren en wijzigingsvoorstellen voor de architectuur opstellen en na accordering verwerken in de architectuur. </td>
 </tr>
 <tr><td style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; '><p id='2E580ABF'>Wijzigingsprotocol</td>
 <td style='border-top: 0.75pt solid #DDDDDD; border-left: 0pt none #000000; border-bottom: 0pt none #000000; border-right: 0pt none #000000; '><p id='02A10CD8'>Hiermee wordt het geheel van vastgelegde regels en afspraken voor het wijzigen van de NLDT Referentie Architectuur vastgelegd.</td>

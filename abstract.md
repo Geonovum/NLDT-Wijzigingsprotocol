@@ -27,10 +27,10 @@ Dit document wordt bijgewerkt op basis van ontwikkelingen rond het beheer van de
 <td class='left'><p id='633F0865'>Concept</p></td>
 <td class='left'><p id='0432008F'></p></td>
 </tr>
-<tr><td class='left'><p id='43D756B8'>0.9.5</p></td>
-<td class='left'><p id='3726B6C9'>20 November 2026</p></td>
-<td class='left'><p id='633F0865'>Ter Vaststelling</p></td>
-<td class='left'><p id='0432008F'></p>opmerkingen verwerkt nav overleg met opdrachtgever</td>
+<tr><td class='left'><p id='43D756B9'>0.9.5</p></td>
+<td class='left'><p id='3726B6C8'>20 November 2026</p></td>
+<td class='left'><p id='633F0866'>Ter Vaststelling</p></td>
+<td class='left'><p id='0432008G'></p>opmerkingen verwerkt nav overleg met opdrachtgever</td>
 </tr>
 </tbody>
 </table>
