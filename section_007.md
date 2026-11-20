@@ -4,8 +4,8 @@ Het in gebruik nemen van (een nieuwe versie van) de NLDT Architectuur staat cent
 ## Opleiding en advies {#064739D0}
 Opleiding en advies kunnen van toegevoegde waarde zijn voor implementatie ondersteuning van de gebruikers van de NLDT Architectuur. Middelen als documentatie, bijeenkomsten en workshops worden ingezet om de kennis over de wijzigingen in de nieuwe architectuur te delen en te ondersteunen bij de implementatie. Ook publicaties in vakbladen kunnen worden ingezet ter ondersteuning.
 
-## Communicatie {#09C256A8}
-Het hele wijzigingsproces staat of valt met een goede communicatie. Onder goede communicatie wordt verstaan het tijdig leveren van de juiste informatie aan de juiste belanghebbenden. Dit betreft de proceskant alsook de producten die er worden opgeleverd.
+## Community {#09C256A8}
+Het hele wijzigingsproces staat of valt met een goede communicatie en een goede community. Onder goede communicatie wordt verstaan het tijdig leveren van de juiste informatie aan de juiste belanghebbenden. Dit betreft de proceskant alsook de producten die er worden opgeleverd.
 <br/>
 <br/>
 <b>Website(s)</b>
@@ -15,6 +15,7 @@ De actuele vigerende versie van de NLDT Architectuur is via het <a href='https:
 Wijzigingen in het NLDT Architectuur worden bekendgemaakt via de <a href='https://www.geonovum.nl/' target='_blank'>Geonovum website</a>.
 <br/>
 De laatste werkversie van de NLDT Architectuur is altijd via de <a href='https://geonovum.github.io/NLDT-Architectuur/' target='_blank'>github site</a> in te zien.
+<br/>
 <br/>
 <b>Nieuwsbrief</b>
 <br/>
@@ -26,6 +27,12 @@ Wijzigingen in de NLDT Architectuur worden bekendgemaakt in de nieuwsbrief van G
 <br/>
 <br/>
 Bij X en Y-wijzigingen wordt in sommige gevallen een publieke consultatie in het wijzigingsproces gehouden. De wijzigingen in de architectuur worden dan voor een bepaalde, afgesproken periode voorgelegd ter commentaar aan alle belanghebbenden en geïnteresseerden door middel van een publieke consultatie via de <a href='https://www.geonovum.nl/' target='_blank'>Geonovum website</a> en de nieuwsbrief van Geonovum.
+<br/>
+<br/>
+<b>Community events</b>
+<br/>
+<br/>
+Op verschillende evenementen wordt aandacht besteed aan de NLDT Architectuur en de ontwikkeling ervan. Dit kan aanvullend in de vorm van Testbeds of andere 'hands-on' evenementen vorm gegeven worden.
 
 ## Validatie en certificatie {#09C256A9}
 

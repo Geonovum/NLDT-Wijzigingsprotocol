@@ -17,7 +17,7 @@ De fase Toetsing vormt een brug tussen de inhoud, besluitvorming en de implement
 <br/>
 <br/>
 <b>Besluitvorming</b>
-Het wijzigingsvoorstel wordt inclusief de consulatie reacties voorgelegd aan de NLDT Stuurgroep. Zij voorziet het wijzigingsvoorstel van advies. Het GI-Beraad besluit, afhankelijk van het type wijziging (X, Y of Z, zie paragraaf 2.2), over de voorgestelde wijziging.
+Het wijzigingsvoorstel wordt inclusief de consulatie reacties voorgelegd aan de NLDT Expertgroep. Zij voorziet het wijzigingsvoorstel van advies. De NLDT Stuurgroep of het GI-Beraad besluit, afhankelijk van het type wijziging (X, Y of Z, zie paragraaf 2.2), over de voorgestelde wijziging.
 <br/>
 <br/>
 <b>Implementatie</b>
